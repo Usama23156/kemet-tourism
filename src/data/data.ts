@@ -141,7 +141,7 @@ export const OurDestination = [
     },
     {
         id:4, 
-        img:"/temple.jpg",
+        img:"/temple1.jpg",
         name:"Kom Ombo",
         temp:[{
             id:1,
