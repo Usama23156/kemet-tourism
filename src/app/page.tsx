@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
     <div className='flex flex-col items-center '>
-    <div className='text-4xl text-white'>
+    <div className='text-2xl text-white'>
       <Hero/>
       <div>
               <Welcome/>

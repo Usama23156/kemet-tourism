@@ -102,10 +102,10 @@ function Page() {
             </SwiperSlide>
           </Swiper>
         </div>
-        <button className="client-prev absolute left-4 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+        <button className="client-prev absolute left-1 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
           <ChevronLeft className="h-6 w-6 text-gray-600" />
         </button>
-        <button className="client-next absolute right-4 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+        <button className="client-next absolute right-1 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
           <ChevronRight className="h-6 w-6 text-gray-600" />
         </button>
       </div>
