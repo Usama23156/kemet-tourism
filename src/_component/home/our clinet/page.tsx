@@ -37,44 +37,43 @@ function Page() {
           >
             
               <SwiperSlide >
-                <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  overflow-scroll lg:overflow-auto ">
+                <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-20 md:max-h-40  overflow-scroll lg:overflow-auto  flex md:flex-col">
                   <div className="flex gap-3 items-center mb-3 p-2">
                     <img src="/client.jpg" alt="" className="max-w-12 rounded-[50%]" />
                     <div>
-                      <h3 className="font-bold text-black text-lg">Client Name</h3>
+                      <h3 className="font-semibold text-black lg:text-lg text-xs">Client Name</h3>
                       <img src="/rating.svg" alt="" className="max-w-24" />
                     </div>
                   </div>
                   <p className="text-black lg:p-3 md:text-base text-xs">
-                    Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
+                    Boost your product and service's credibility by adding testimonials from your clients.
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide  >
-                <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40 overflow-scroll lg:overflow-auto">
+                <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-20 md:max-h-40 overflow-scroll lg:overflow-auto flex md:flex-col">
                   <div className="flex gap-3 items-center mb-3 p-2">
                     <img src="/client.jpg" alt="" className="max-w-12 rounded-[50%]" />
                     <div>
-                      <h3 className="font-bold text-black text-lg">Client Name</h3>
+                      <h3 className="font-semibold text-black lg:text-lg text-xs">Client Name</h3>
                       <img src="/rating.svg" alt="" className="max-w-24" />
                     </div>
                   </div>
                   <p className="text-black lg:p-3 md:text-base text-xs">
-                    Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
-                  </p>
+                    Boost your product and service's credibility by adding testimonials from your clients. </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide  >
-                <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40 overflow-scroll lg:overflow-auto">
+                <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96  max-h-20 md:max-h-40 overflow-scroll lg:overflow-auto flex md:flex-col">
                   <div className="flex gap-3 items-center mb-3 p-2">
                     <img src="/client.jpg" alt="" className="max-w-12 rounded-[50%]" />
                     <div>
-                      <h3 className="font-bold text-black text-lg">Client Name</h3>
+                      <h3 className="font-semibold text-black lg:text-lg text-xs">Client Name</h3>
                       <img src="/rating.svg" alt="" className="max-w-24" />
                     </div>
                   </div>
                   <p className="text-black lg:p-3 md:text-base text-xs">
-                    Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
+                    Boost your product and service's credibility by adding testimonials from your clients. 
                   </p>
                 </div>
               </SwiperSlide>
