@@ -8,9 +8,10 @@ import HandelTrip from '../_component/home/handel trip/page'
 import Escapes from '../_component/home/EscapsHome/page'
 import FooterHome from '../_component/home/FooterHome/page'
 
-export default function HomePage() {
+export default function Page() {
   return (
     <>
+    <div className='flex flex-col items-center'>
     <div className='text-5xl text-white'>
       <Hero/>
       <div>
@@ -22,6 +23,7 @@ export default function HomePage() {
               <OurClient/>
               <FooterHome/>
             </div>
+    </div>
     </div>
     </>
   )

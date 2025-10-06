@@ -18,7 +18,7 @@ const destination: {
 function page() {
   return (
     <div className='relative '>
-        <img src="/Sail into 3.png" alt="" className='lg:max-w-xl md:max-w-lg max-w-96'/>
+        <img src="/Sail-into-3.png" alt="" className='lg:max-w-xl md:max-w-lg max-w-96'/>
         <Link href={`/Destination/DestinationDetails?id=${destination[0].id}`} className='flex justify-center items-center gap-4 mt-6 absolute -top-10 right-0 md:right-11 lg:right-2 cursor-pointer'>
             <div className='flex flex-col justify-center items-center'>
             <h3 className='font-bold lg:text-lg text-sm'>{destination[0].name}</h3>
