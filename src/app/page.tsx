@@ -13,8 +13,7 @@ export default function HomePage() {
     <>
     <div className='text-5xl text-white'>
       <Hero/>
-      <div   style={{ backgroundImage: `url(/bg.png)` }}
-            className="bg-fixed bg-no-repeat bg-cover bg-center min-h-[100vh]">
+      <div>
               <Welcome/>
               <Escapes/>
               <NextTrip/>

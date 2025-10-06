@@ -13,6 +13,8 @@ const page = () => {
 
   return (
     <>
+    <div style={{ backgroundImage: `url(/bg.png)` }}
+            className="bg-fixed bg-no-repeat bg-cover bg-center min-h-[100vh]">
       <div className="md:flex justify-center items-center  bg-fixed  px-6 lg:px-32 gap-10 py-6 ">
         <div className="md:w-[47%] md:pt-12 items-center lg:items-start lg:gap-y-0 gap-y-8 flex flex-col">
           <h2 className={`font-semibold lg:text-4xl text-3xl ${CinzelFont.className}`}> Travel made easy </h2>
@@ -33,6 +35,7 @@ const page = () => {
         <div className="md:w-[47%]">
             <img src="/welcome.jpg" alt="" className="min-w-20 rounded-4xl " />
         </div>
+      </div>
       </div>
     </>
   );

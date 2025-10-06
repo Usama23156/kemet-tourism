@@ -141,12 +141,12 @@ export const OurDestination = [
     },
     {
         id:4, 
-        img:"/temple1.jpg",
+        img:"/temple1.JPG",
         name:"Kom Ombo",
         temp:[{
             id:1,
             name:"Kom Ombo Temple",
-            img:"/temple.jpg",
+            img:"/temple.JPG",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
