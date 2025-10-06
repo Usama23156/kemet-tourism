@@ -28,7 +28,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-full h-full '>
                     <div>
                         <h1 className={`hover:scale-110 duration-500 transition-transform font-extrabold text-white mb-4 md:mb-0 text-[30px] md:text-[40px] text-center lg:text-[50px] tracking-[0.5rem] ${AlluraFont.className}`}>Discover Authentic Egypt</h1>
-                        <p className={`text-white text-center hover:scale-110 duration-500 transition-transform  text-2xl font-semibold [word-spacing:5px] ${LatoFont.className}`}>Luxury Escapes & Tailor-Made Travel</p>
+                        <p className={`text-white text-center hover:scale-110 duration-500 transition-transform  text-xl font-semibold [word-spacing:5px] ${LatoFont.className}`}>Luxury Escapes & Tailor-Made Travel</p>
                     </div>
                 </div>
             </div>
