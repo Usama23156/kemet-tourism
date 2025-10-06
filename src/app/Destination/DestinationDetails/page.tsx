@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { OurDestination } from "@/data/data";

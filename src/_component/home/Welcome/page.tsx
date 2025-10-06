@@ -11,7 +11,6 @@ import Image from "next/image";
 
 const page = () => {
 
-  
   return (
     <>
       <div className="md:flex justify-center items-center  bg-fixed  px-6 lg:px-32 gap-10 py-6 ">
@@ -32,7 +31,7 @@ const page = () => {
           </div>
         </div>
         <div className="md:w-[47%]">
-            <Image src="/welcome.jpg" alt="" className="min-w-20 rounded-4xl " />
+            <img src="/welcome.jpg" alt="" className="min-w-20 rounded-4xl " />
         </div>
       </div>
     </>
