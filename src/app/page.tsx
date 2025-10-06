@@ -11,8 +11,8 @@ import FooterHome from '../_component/home/FooterHome/page'
 export default function Page() {
   return (
     <>
-    <div className='flex flex-col items-center'>
-    <div className='text-5xl text-white'>
+    <div className='flex flex-col items-center '>
+    <div className='text-4xl text-white'>
       <Hero/>
       <div>
               <Welcome/>

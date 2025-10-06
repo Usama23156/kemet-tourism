@@ -37,13 +37,13 @@ function page() {
             <img src={destination[2].img} alt="" className=' rounded-[50%] lg:w-20 lg:h-20 md:h-14 md:w-14 h-10 w-10'/>
             <div className='flex flex-col justify-center items-center'>
             <h3 className='font-bold  lg:text-lg text-sm'>{destination[2].name}</h3>
-            <p className=' lg:text-lg text-sm'> {destination[2].temp[0].name}</p>
+            <p className=' lg:text-lg text-sm '> {destination[2].temp[0].name}</p>
             </div>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[3].id}`} className='flex justify-center items-center gap-4 mt-6 absolute lg:top-48 -right-4 top-32 md:top-44 md:right-10 lg:-right-6 cursor-pointer'>
+        <Link href={`/Destination/DestinationDetails?id=${destination[3].id}`} className='flex justify-center items-center gap-4 mt-6 absolute lg:top-48 -right-0 top-32 md:top-44 md:right-10 lg:-right-6 cursor-pointer'>
             <div className='flex flex-col justify-center items-center'>
             <h3 className='font-bold  lg:text-lg text-sm'>{destination[3].name}</h3>
-            <p className=' lg:text-lg text-sm'> {destination[3].temp[0].name}</p>
+            <p className=' lg:text-lg text-sm max-w-20 text-center md:max-w-44'> {destination[3].temp[0].name}</p>
             </div>
             <img src={destination[3].img} alt="" className=' rounded-[50%] lg:w-20 lg:h-20 md:h-14 md:w-14 h-10 w-10'/>
         </Link>
@@ -58,7 +58,7 @@ function page() {
             <img src={destination[5].img} alt="" className=' rounded-[50%] lg:w-20 lg:h-20 md:h-14 md:w-14 h-10 w-10'/>
             <div className='flex flex-col justify-center items-center'>
             <h3 className='font-bold  lg:text-lg text-sm'>{destination[5].name}</h3>
-            <p className=' lg:text-lg text-sm'> {destination[5].temp[0].name}</p>
+            <p className=' lg:text-lg text-sm max-w-20 text-center md:max-w-44'> {destination[5].temp[0].name}</p>
             </div>
         </Link>
     </div>

@@ -38,8 +38,8 @@ function Page() {
             className="hero-swiper text-center w-80 lg:w-full lg:max-w-4xl "
           >
             <SwiperSlide>
-              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-20 md:max-h-40  lg:overflow-auto  flex md:flex-col">
-                <div className="flex gap-3 items-center mb-3 p-2">
+              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -47,7 +47,7 @@ function Page() {
                   />
                   <div>
                     <h3 className="font-semibold text-black lg:text-lg text-xs">
-                      Client Name
+                      ClientName
                     </h3>
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
@@ -59,8 +59,8 @@ function Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-20 md:max-h-40 lg:overflow-auto flex md:flex-col">
-                <div className="flex gap-3 items-center mb-3 p-2">
+              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -68,20 +68,20 @@ function Page() {
                   />
                   <div>
                     <h3 className="font-semibold text-black lg:text-lg text-xs">
-                      Client Name
+                      ClientName
                     </h3>
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
                 </div>
                 <p className="text-black lg:p-3 md:text-base text-xs">
                   Boost your product and service's credibility by adding
-                  testimonials from your clients.{" "}
+                  testimonials from your clients.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-white lg:max-w-64 p-2 rounded-2xl lg:max-h-96  max-h-20 md:max-h-40  lg:overflow-auto flex md:flex-col">
-                <div className="flex gap-3 items-center mb-3 p-2">
+              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -89,7 +89,7 @@ function Page() {
                   />
                   <div>
                     <h3 className="font-semibold text-black lg:text-lg text-xs">
-                      Client Name
+                      ClientName
                     </h3>
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
