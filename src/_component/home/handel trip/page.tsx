@@ -33,10 +33,10 @@ const page = () => {
   };
   return (
     <>
-    <div className="flex flex-col justify-center items-center gap-y-6">
+    <div className="flex flex-col justify-center items-center gap-y-4">
       <div className='flex justify-center items-center pt-6 gap-x-3'>
         <h3 className={`pt-9 text-xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}>Escape the Ordinary</h3>
-        <img src="/Pyramids.png" alt="" className='lg:max-w-80 max-w-56'/>
+        <img src="/Pyramids.png" alt="" className='lg:max-w-80 max-w-36'/>
       </div>
         <img src="/Escape the or 1.png" alt="" className='lg:max-w-5xl'/>
         <h4 className='text-3xl md:text-4xl lg:text-5xl text-[#b49e09]'>We'll handle your trip for you</h4>
