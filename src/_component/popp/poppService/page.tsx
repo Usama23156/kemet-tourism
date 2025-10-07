@@ -17,7 +17,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, service }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center mt-10 " onClick={onClose}>
-      <div className="bg-blue-950 rounded-2xl p-6 relative ">
+      <div className="bg-blue-950 rounded-2xl p-6 relative mx-5">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-white hover:text-gray-400 cursor-pointer"
