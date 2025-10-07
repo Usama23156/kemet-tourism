@@ -11,10 +11,10 @@ import "swiper/css/pagination";
 function Page() {
   return (
     <>
-      <div className="pt-9 pb-9 relative flex justify-center items-center flex-col gap-y-6">
-        <img src="/our client.jpg" alt="" className="min-w-20" />
-        <div className="flex flex-col justify-center items-center mt-6 gap-y-1 md:gap-y-6 absolute bottom-12 md:bottom-14">
-          <h2  data-aos="fade-up" className="text-2xl md:text-4xl lg:text-5xl font-bold">
+      <div style={{ backgroundImage: `url(/our-client.JPG)` }}
+       className=" bg-no-repeat bg-cover bg-center min-h-[60vh] lg:h-[80vh]">
+        <div className="flex flex-col justify-center items-center mt-6 pt-16 gap-y-9 md:gap-y-6 ">
+          <h2  data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Our Favorite Travelers
           </h2>
           <Swiper
@@ -38,8 +38,8 @@ function Page() {
             className="hero-swiper text-center w-80 lg:w-full lg:max-w-4xl "
           >
             <SwiperSlide >
-              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
-                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+                <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -55,12 +55,14 @@ function Page() {
                 <p className="text-black lg:p-3 md:text-base text-xs">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
+                  Boost your product and service's credibility by adding
+                  testimonials from your clients.
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
-                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
+            <SwiperSlide >
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+                <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -76,12 +78,14 @@ function Page() {
                 <p className="text-black lg:p-3 md:text-base text-xs">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
+                  Boost your product and service's credibility by adding
+                  testimonials from your clients.
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
-                <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
+            <SwiperSlide >
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+                <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -97,17 +101,22 @@ function Page() {
                 <p className="text-black lg:p-3 md:text-base text-xs">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
+                  Boost your product and service's credibility by adding
+                  testimonials from your clients.
                 </p>
               </div>
             </SwiperSlide>
+           
           </Swiper>
         </div>
-        <button className="client-prev absolute left-1 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+        <div className="relative">
+        <button className="client-prev absolute bottom-5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
           <ChevronLeft className="h-6 w-6 text-gray-600" />
         </button>
-        <button className="client-next absolute right-1 bottom-1/5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+        <button className="client-next absolute right-0 bottom-5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
           <ChevronRight className="h-6 w-6 text-gray-600" />
         </button>
+        </div>
       </div>
     </>
   );
