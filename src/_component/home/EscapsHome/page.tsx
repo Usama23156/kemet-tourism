@@ -18,7 +18,7 @@ function page() {
         <h4 className="md:text-4xl text-2xl">Discover Egypt like never before ...</h4>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-12 p-6 lg:p-12">
           {Escapes.map((escape) => (
-            <div
+            <div  data-aos="fade-right"
               key={escape.id}
               className="flex flex-col justify-center items-center gap-y-6 gap-x-6"
             >

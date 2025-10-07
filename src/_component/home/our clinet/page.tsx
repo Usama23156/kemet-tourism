@@ -14,7 +14,7 @@ function Page() {
       <div className="pt-9 pb-9 relative flex justify-center items-center flex-col gap-y-6">
         <img src="/our client.jpg" alt="" className="min-w-20" />
         <div className="flex flex-col justify-center items-center mt-6 gap-y-1 md:gap-y-6 absolute bottom-12 md:bottom-14">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
+          <h2  data-aos="fade-up" className="text-2xl md:text-4xl lg:text-5xl font-bold">
             Our Favorite Travelers
           </h2>
           <Swiper
@@ -37,8 +37,8 @@ function Page() {
             }}
             className="hero-swiper text-center w-80 lg:w-full lg:max-w-4xl "
           >
-            <SwiperSlide>
-              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+            <SwiperSlide >
+              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
                 <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"
@@ -59,7 +59,7 @@ function Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
                 <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"
@@ -80,7 +80,7 @@ function Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
+              <div  data-aos="fade-right" className="bg-white  lg:max-w-64 p-2 rounded-2xl lg:max-h-96 max-h-24 md:max-h-40  lg:overflow-auto justify-center pt-5 flex md:flex-col">
                 <div className="flex flex-col md:flex-row gap-3 justify-center items-center mb-3 p-3">
                   <img
                     src="/client.jpg"

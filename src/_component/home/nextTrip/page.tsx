@@ -14,11 +14,11 @@ const AlluraFont = Allura({
 })
 function page() {
   return (
-    <div>
+    <div >
         <div className='flex justify-center items-center flex-col pt-6 gap-y-5 '>
-           <p className={`text-4xl ${AlluraFont.className}`}>Let’s plan your next trip</p>
-           <h2 className={`text-center ${CinzelFont.className}`}> WHY CHOOSE US</h2>
-           <img src="/why us .png" alt="" className='lg:max-w-3xl md:max-w-xl'/>
+           <p  data-aos="fade-up" className={`text-4xl lg:text-5xl ${AlluraFont.className}`}>Let’s plan your next trip</p>
+           <h2  data-aos="fade-up" className={`text-center lg:text-2xl ${CinzelFont.className}`}> WHY CHOOSE US</h2>
+           <img  data-aos="fade-right" src="/why us .png" alt="" className='lg:max-w-3xl md:max-w-xl'/>
         </div>
     </div>
   )
