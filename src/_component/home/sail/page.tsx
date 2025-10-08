@@ -26,7 +26,7 @@ function page() {
         <div className='flex justify-center items-center overflow-x-hidden'>
           <img data-aos="fade-right" src="/Triangles-1.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute' />
           <img data-aos="fade-up" src="/Triangles-2.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 ' />
-          <img data-aos="fade-right" src="/Triangles-3.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute overflow-x-hidden min-w-56 ' />
+          <img data-aos="fade-right" src="/Triangles-3.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute ' />
         </div>
         
      </div>
