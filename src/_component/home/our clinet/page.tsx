@@ -12,7 +12,7 @@ function Page() {
   return (
     <>
       <div style={{ backgroundImage: `url(/our-client.JPG)` }}
-       className=" bg-no-repeat bg-cover bg-center min-h-[60vh] lg:h-[80vh]">
+       className=" bg-no-repeat bg-cover bg-center min-h-[50vh] lg:h-[80vh]">
         <div className="flex flex-col justify-center items-center mt-6 pt-16 gap-y-9 md:gap-y-6 ">
           <h2  data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Our Favorite Travelers
@@ -38,7 +38,7 @@ function Page() {
             className="hero-swiper text-center w-80 lg:w-full lg:max-w-4xl "
           >
             <SwiperSlide >
-              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0  ">
                 <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
@@ -61,7 +61,7 @@ function Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide >
-              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0  ">
                 <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
@@ -84,7 +84,7 @@ function Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide >
-              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 ">
+              <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0 ">
                 <div className="flex gap-3 lg:justify-center items-center pb-3">
                   <img
                     src="/client.jpg"
@@ -102,7 +102,7 @@ function Page() {
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
                   Boost your product and service's credibility by adding
-                  testimonials from your 
+                  testimonials from your client .
                 </p>
               </div>
             </SwiperSlide>
