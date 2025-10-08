@@ -12,8 +12,8 @@ function Page() {
   return (
     <>
       <div style={{ backgroundImage: `url(/our-client.JPG)` }}
-       className=" bg-no-repeat bg-cover bg-center min-h-[50vh] lg:h-[80vh]">
-        <div className="flex flex-col justify-center items-center mt-6 pt-16 gap-y-9 md:gap-y-6 ">
+       className=" bg-no-repeat bg-cover bg-center ">
+        <div className="flex flex-col justify-center items-center mt-6 pt-16 gap-y-9 md:gap-y-6 pb-5">
           <h2  data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Our Favorite Travelers
           </h2>
