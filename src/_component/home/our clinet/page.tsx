@@ -102,7 +102,7 @@ function Page() {
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
                   Boost your product and service's credibility by adding
-                  testimonials from your clients.
+                  testimonials from your 
                 </p>
               </div>
             </SwiperSlide>
