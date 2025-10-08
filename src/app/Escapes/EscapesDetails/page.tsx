@@ -37,7 +37,7 @@ const Page: React.FC = () => {
             <p className="m-auto h-[100vh]">Loading...</p>
           </div>
         ) : (
-          <div className="flex flex-col md:flex-row justify-center lg:items-center gap-12 lg:gap-24 p-6 lg:p-12 mt-12">
+          <div className="flex flex-col md:flex-row justify-center lg:items-center gap-12 lg:gap-24 lg:p-12 mt-12">
             <div className="flex flex-col justify-center gap-6">
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
@@ -50,7 +50,7 @@ const Page: React.FC = () => {
                   disableOnInteraction: false,
                 }}
                 data-aos="fade-up"
-                className="hero-swiper text-center max-w-80 lg:max-w-2xl"
+                className="hero-swiper text-center max-w-80 lg:max-w-2xl "
               >
                 {escapeData.img.map((image, index) => (
                   <SwiperSlide key={index}>
@@ -64,7 +64,7 @@ const Page: React.FC = () => {
               </Swiper>
               <h2 className="text-4xl font-bold mb-6 text-center">{escapeData.name}</h2>
             </div>
-            <div className="max-w-lg">
+            <div className="max-w-lg px-6">
               <h3 className="text-2xl font-bold mb-6">Price: {escapeData.price}</h3>
               <ul className="list-disc list-inside mb-6 grid grid-cols-2 md:grid-cols-1">
                 {escapeData.features.map((feature, index) => (
