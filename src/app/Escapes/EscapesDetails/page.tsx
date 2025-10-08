@@ -50,7 +50,7 @@ const Page: React.FC = () => {
                   disableOnInteraction: false,
                 }}
                 data-aos="fade-up"
-                className="hero-swiper text-center max-w-96 lg:max-w-2xl"
+                className="hero-swiper text-center max-w-80 lg:max-w-2xl"
               >
                 {escapeData.img.map((image, index) => (
                   <SwiperSlide key={index}>
