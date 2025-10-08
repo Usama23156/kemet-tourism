@@ -35,7 +35,7 @@ function Page() {
                 slidesPerView: 3,
               },
             }}
-            data-aos="fade-right" 
+            data-aos="fade-up" 
             className="hero-swiper text-center w-80 lg:w-full lg:max-w-4xl "
           >
             <SwiperSlide >

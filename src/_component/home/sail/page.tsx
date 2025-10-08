@@ -23,7 +23,7 @@ function page() {
         </div>
         <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
         <Map/>
-        <div className='flex justify-center items-center  '>
+        <div className='flex justify-center items-center overflow-x-hidden'>
           <img data-aos="fade-right" src="/Triangles-1.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute' />
           <img data-aos="fade-up" src="/Triangles-2.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 ' />
           <img data-aos="fade-left" src="/Triangles-3.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute ' />
