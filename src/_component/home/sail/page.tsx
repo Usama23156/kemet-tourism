@@ -19,7 +19,7 @@ function page() {
         <div className='flex justify-center items-center  '>
         <img data-aos="fade-right"  src="/last-round-trip-3.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute '/>
         <img data-aos="fade-up"  src="/last-round-trip-4.png" alt="" className='lg:max-w-2xl md:max-w-lg '/>
-        <img data-aos="fade-left"  src="/last-round-trip-2.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute '/>
+        <img data-aos="fade-left"  src="/last-Round-Trip-2.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute '/>
         </div>
         <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
         <Map/>
