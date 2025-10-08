@@ -32,7 +32,7 @@ export default function Page() {
     <div className='overflow-hidden '>
     <div className='text-xl text-white overflow-hidden'>
       <Hero/>
-      <div>
+      <div className='overflow-hidden'>
               <Welcome/>
               <Escapes/>
               <NextTrip/>
