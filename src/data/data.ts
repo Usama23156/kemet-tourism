@@ -2,50 +2,50 @@
 export const OurEscapes = [
     {
         id:1, 
-        img:"/IMG_6812.jpg",
+        img:["/IMG_6812.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"Serenity Escape",
         price:"Starts at $999",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],              
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:2, 
-        img:"/IMG_1055 - Copy.jpg",
+        img:["/IMG_1055 - Copy.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"KEMET Tales",
         price:"Starts at $1500",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],              
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:3, 
-        img:"/temple1.JPG",
+        img:["/IMG_2752.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"R & R Escape",
         price:"Starts at $3000",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],              
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:4, 
-        img:"/IMG_1936.jpg",
+        img:["/IMG_1936.jpg","/IMG_6812.jpg", "/IMG_6459.jpg"],
         name:"SOUL OF EGYPT",
         price:"Starts at $999",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],              
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:5, 
-        img:"/IMG_5195.jpg",
+        img:["/IMG_5195.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"AUTHENTICITY",
         price:"Starts at $1500",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],       
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],       
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:6, 
-        img:"/IMG_6459.jpg",
+        img:["/IMG_6459.jpg" ,"/IMG_6812.jpg", "/IMG_1936.jpg"],
         name:"TRANQUILITY",
         price:"Starts at $3000",
-        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Guided Historical Escapes", "Welcome drink"],              
+        features:["Round Nile Sailing", "7D/6N Twin share room", "Full board meals", "Welcome drink" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
 ]

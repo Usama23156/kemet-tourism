@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Escapes: {
   id: number;
-  img: string;
+  img: string[];
   name: string;
   price: string;
   features: string[];
@@ -25,9 +25,9 @@ function page() {
               <div className="flex flex-col justify-center items-center gap-y-3 gap-x-6 relative opacity-75 hover:opacity-100 hover:scale-105 transition-all duration-300">
                 <div>
                 <img
-                  src={escape.img}
+                  src={escape.img[0]}
                   alt=""
-                  className=" lg:max-w-64 md:max-w-80 rounded-2xl  max-w-96"
+                  className=" lg:max-w-64 md:max-w-80 rounded-2xl max-w-96"
                   />
                   </div>
                 <div className="max-w-md flex flex-col left-2 gap-y-3 absolute bottom-0 w-full py-3 ">
