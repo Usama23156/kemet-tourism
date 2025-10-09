@@ -20,7 +20,7 @@ function page() {
           {Escapes.map((escape) => (
             <div  data-aos="fade-right"
               key={escape.id}
-              className="flex flex-col justify-center items-center gap-y-6 gap-x-6 border-1 border-[#b49e09] rounded-3xl pb-3 border-t-0  hover:scale-105 transition-all duration-300"
+              className="flex flex-col justify-center items-center gap-y-6 gap-x-6 border-1 border-[#b49e09] rounded-3xl pb-3  hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               <div className="flex flex-col justify-center items-center gap-y-3 gap-x-6 relative opacity-75 hover:opacity-100 hover:scale-105 transition-all duration-150">
                 <div>
