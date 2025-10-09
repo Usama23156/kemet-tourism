@@ -66,9 +66,9 @@ const Page: React.FC = () => {
             </div>
             <div className="max-w-lg px-6">
               <h3 className="text-2xl font-bold mb-6">Price: {escapeData.price}</h3>
-              <ul className="list-disc list-outside mb-6 grid grid-cols-2 md:grid-cols-1">
+              <ul className=" mb-6 grid grid-cols-2">
                 {escapeData.features.map((feature, index) => (
-                  <li key={index} className="mb-2">{feature}</li>
+                  <li key={index} className="mb-2 text-sm ">{feature}</li>
                 ))}
               </ul>
               <p className="mb-6">{escapeData.discrption}</p>
