@@ -68,7 +68,7 @@ const Page: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Price: {escapeData.price}</h3>
               <ul className=" mb-6 grid grid-cols-2">
                 {escapeData.features.map((feature, index) => (
-                  <li key={index} className="mb-2 text-sm md:text-base">{feature}</li>
+                  <li key={index} className="mb-2 text-sm ">{feature}</li>
                 ))}
               </ul>
               <p className="mb-6">{escapeData.discrption}</p>
