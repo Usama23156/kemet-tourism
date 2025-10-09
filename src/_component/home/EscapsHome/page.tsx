@@ -36,7 +36,7 @@ function page() {
                 </div>
               </div>
               {escape.features.map((feature, index) => (
-                  <p key={index} className="text-center lg:text-sm text-2xl h-3 lg:h-0">{feature}</p>
+                  <p key={index} className=" lg:text-sm text-2xl h-3 lg:h-0">{feature}</p>
                 ))}
                 <Link href={`/Escapes/EscapesDetails?id=${escape.id}`}>
                 <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
