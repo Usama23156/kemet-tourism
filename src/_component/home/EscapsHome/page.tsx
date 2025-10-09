@@ -30,7 +30,7 @@ function page() {
                   className=" lg:max-w-64 md:max-w-80 rounded-2xl rounded-b-none max-w-96"
                   />
                   </div>
-                <div className="max-w-md flex flex-col left-2 gap-y-3 absolute bottom-0 w-full py-3 ">
+                <div className="max-w-md flex flex-col left-6 gap-y-3 absolute bottom-0 w-full py-3 ">
                   <h3 className="md:text-sm text-2xl font-bold ">{escape.name}</h3>
                   <p className="md:text-sm text-2xl font-bold">{escape.price}</p>
                 </div>
