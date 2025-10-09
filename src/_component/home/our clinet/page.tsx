@@ -21,10 +21,7 @@ function Page() {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={10}
             slidesPerView={1} // Default to 1 slide on small screens
-            navigation={{
-              prevEl: ".client-prev",
-              nextEl: ".client-next",
-            }}
+            navigation
             pagination={{ clickable: true }}
             autoplay={{
               delay: 5000,
@@ -40,7 +37,7 @@ function Page() {
           >
             <SwiperSlide >
               <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0  ">
-                <div className="flex gap-3 lg:justify-center items-center pb-3">
+                <div className="flex gap-3 lg:justify-center items-center pb-3 px-6">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -53,7 +50,7 @@ function Page() {
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
                 </div>
-                <p className="text-black lg:p-3 md:text-base text-xs">
+                <p className="text-black lg:p-3 md:text-base text-xs  px-6">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
                   Boost your product and service's credibility by adding
@@ -63,7 +60,7 @@ function Page() {
             </SwiperSlide>
             <SwiperSlide >
               <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0  ">
-                <div className="flex gap-3 lg:justify-center items-center pb-3">
+                <div className="flex gap-3 lg:justify-center items-center pb-3 px-6">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -76,7 +73,7 @@ function Page() {
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
                 </div>
-                <p className="text-black lg:p-3 md:text-base text-xs">
+                <p className="text-black lg:p-3 md:text-base text-xs px-6">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
                   Boost your product and service's credibility by adding
@@ -86,7 +83,7 @@ function Page() {
             </SwiperSlide>
             <SwiperSlide >
               <div   className="bg-white max-w-80 lg:max-w-64 p-3 rounded-2xl items-center justify-center pt-5 pb-9 lg:pb-0 ">
-                <div className="flex gap-3 lg:justify-center items-center pb-3">
+                <div className="flex gap-3 lg:justify-center items-center pb-3 px-6">
                   <img
                     src="/client.jpg"
                     alt=""
@@ -99,7 +96,7 @@ function Page() {
                     <img src="/rating.svg" alt="" className="max-w-24" />
                   </div>
                 </div>
-                <p className="text-black lg:p-3 md:text-base text-xs">
+                <p className="text-black lg:p-3 md:text-base text-xs px-6">
                   Boost your product and service's credibility by adding
                   testimonials from your clients.
                   Boost your product and service's credibility by adding
@@ -109,14 +106,6 @@ function Page() {
             </SwiperSlide>
            
           </Swiper>
-        </div>
-        <div className="relative">
-        <button className="client-prev absolute bottom-5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
-          <ChevronLeft className="h-6 w-6 text-gray-600" />
-        </button>
-        <button className="client-next absolute right-0 bottom-5 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
-          <ChevronRight className="h-6 w-6 text-gray-600" />
-        </button>
         </div>
       </div>
     </>
