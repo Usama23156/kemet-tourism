@@ -26,7 +26,7 @@ function page() {
         <div className='flex  items-center'>
           <img data-aos="fade-right" src="/triangles001.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:left-44 left-5 md:left-16 hover:scale-105 transition-all duration-300' />
           <img data-aos="fade-right" src="/triangles004.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:left-80 left-24 md:left-44 hover:scale-105 transition-all duration-300' />
-          <img data-aos="fade-up" src="/tiangles002.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 hover:scale-105 transition-all duration-300 ' />
+          <img data-aos="fade-up" src="/tiangles002.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 hover:scale-105 transition-all duration-300' />
           <img data-aos="fade-right" src="/triangles005.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36  absolute lg:right-80 right-24 md:right-44 hover:scale-105 transition-all duration-300' />
           <img data-aos="fade-right" src="/trangles003.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:right-44 right-5 md:right-16 hover:scale-105 transition-all duration-300' />
           {/* <img data-aos="fade-right" src="/Triangles-1.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute' />
