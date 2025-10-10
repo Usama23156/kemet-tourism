@@ -23,10 +23,15 @@ function page() {
         </div>
         <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
         <Map/>
-        <div className='flex justify-center items-center'>
-          <img data-aos="fade-right" src="/Triangles-1.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute' />
+        <div className='flex  items-center'>
+          <img data-aos="fade-right" src="/triangles001.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:left-44 left-5 md:left-16' />
+          <img data-aos="fade-right" src="/triangles004.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:left-80 left-24 md:left-44' />
+          <img data-aos="fade-up" src="/tiangles002.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 ' />
+          <img data-aos="fade-right" src="/triangles005.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36  absolute lg:right-80 right-24 md:right-44' />
+          <img data-aos="fade-right" src="/trangles003.png" alt="" className='lg:max-w-80 md:max-w-56 max-w-36 absolute lg:right-44 right-5 md:right-16' />
+          {/* <img data-aos="fade-right" src="/Triangles-1.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute' />
           <img data-aos="fade-up" src="/Triangles-2.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 ' />
-          <img data-aos="fade-right" src="/Triangles-3.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute ' />
+          <img data-aos="fade-right" src="/Triangles-3.png" alt="" className='lg:max-w-2xl md:max-w-xl max-w-96 absolute ' /> */}
         </div>
         
      </div>
