@@ -10,7 +10,7 @@ export const OurEscapes = [
     },
     {
         id:2, 
-        img:["/IMG_1055 - Copy.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
+        img:["Kemet-tales2.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"KEMET Tales",
         price:"Starts at $1500",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
@@ -18,7 +18,7 @@ export const OurEscapes = [
     },
     {
         id:3, 
-        img:["/IMG_2752.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
+        img:["/R&R-Escapes3.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"R & R Escape",
         price:"Starts at $3000",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
@@ -26,7 +26,7 @@ export const OurEscapes = [
     },
     {
         id:4, 
-        img:["/IMG_1936.jpg","/IMG_6812.jpg", "/IMG_6459.jpg"],
+        img:["/Soul-of-Egypt.jpg","/IMG_6812.jpg", "/IMG_6459.jpg"],
         name:"SOUL OF EGYPT",
         price:"Starts at $999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
@@ -42,7 +42,7 @@ export const OurEscapes = [
     },
     {
         id:6, 
-        img:["/IMG_6459.jpg" ,"/IMG_6812.jpg", "/IMG_1936.jpg"],
+        img:["/Tranquility.jpg" ,"/IMG_6812.jpg", "/IMG_1936.jpg"],
         name:"TRANQUILITY",
         price:"Starts at $3000",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
