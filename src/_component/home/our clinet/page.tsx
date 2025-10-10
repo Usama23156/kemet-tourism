@@ -2,7 +2,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -104,6 +103,11 @@ function Page() {
                 </p>
               </div>
             </SwiperSlide>
+            <div>
+              <button>
+                
+              </button>
+            </div>
            
           </Swiper>
         </div>

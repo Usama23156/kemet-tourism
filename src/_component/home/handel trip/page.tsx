@@ -3,6 +3,12 @@ import React, { useState } from 'react'
 import { Cinzel } from 'next/font/google'
 import { OurServises } from '@/data/data'
 import PoppService from "@/_component/popp/poppService/page"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
  const CinzelFont = Cinzel({
   subsets: ['latin'],
@@ -38,7 +44,52 @@ const page = () => {
         <h3  data-aos="fade-right" className={`pt-9 text-xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}>Escape the Ordinary</h3>
         <img  data-aos="fade-left" src="/Pyramids.png" alt="" className='lg:max-w-80 max-w-36'/>
       </div>
-        <img  data-aos="fade-right" src="/Escape the or 1.png" alt="" className='lg:max-w-5xl'/>
+        {/* <img  data-aos="fade-right" src="/Escape the or 1.png" alt="" className='lg:max-w-5xl'/> */}
+         <Swiper
+                     modules={[Navigation, Pagination, Autoplay]}
+                     spaceBetween={10}
+                     slidesPerView={3} // Default to 1 slide on small screens
+                     loop={true}
+                     navigation
+                     pagination={{ clickable: true }}
+                     autoplay={{
+                       delay: 5000,
+                       disableOnInteraction: false,
+                     }}
+                     breakpoints={{
+                       868: {
+                         slidesPerView: 5,
+                       },
+                       640: {
+                         slidesPerView: 4,
+                         spaceBetween: 0,
+                       },
+                     }}
+                     data-aos="fade-right" 
+                     className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6"
+                   >
+                     <SwiperSlide className=''>
+          <img   src="/escapes001.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide className=''>
+          <img   src="/escapes002.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide >
+          <img   src="/escapes003.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide className='' >
+          <img   src="/escapes004.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide className='' >
+          <img   src="/escapes005.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide className=''>
+          <img   src="/escapes006.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     <SwiperSlide className=''>
+          <img   src="/escapes007.png" alt="" className='lg:max-w-lg max-w-80 hover:scale-105 transition-all duration-300'/>
+                     </SwiperSlide>
+                     </Swiper>
         <h4  data-aos="fade-up" className='text-3xl md:text-4xl lg:text-5xl text-[#b49e09]'>We'll handle your trip for you</h4>
         <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-12 p-6 lg:p-12'>
            {Servises.map((service) => 
