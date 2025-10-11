@@ -1,11 +1,14 @@
 import React from 'react'
+import Link from 'next/link'
 
 function page() {
   return (
     <div className='w-full border-dashed border-t-1 border-[white] opacity-60'>
         <div className="flex items-center justify-between max-w-[1000px] mx-auto">
       <div className="text-[1.1rem] font-semibold  flex items-center gap-x-2">
-      <img src='/LOGO2.PNG' alt="Logo" className='max-w-36' />
+      <Link href="/" className="text-[1.1rem] font-semibold flex items-center gap-x-2 cursor-pointer ">
+                <img src="/LOGO2.PNG" alt="Logo" className='max-w-36' />
+      </Link>
       </div>
       <div className="social-icons flex items-center gap-x-2">
         <div className='s-i w-[34px] h-[34px] text-[2rem] text-center leading-[55px] bg-[color:var(--bg-color)] text-[color:var(--main-color)] transition-[0.2s] duration-[all] ease-linear rounded-[50%] border-1 border-solid border-[white] flex justify-center pt-1.5'>

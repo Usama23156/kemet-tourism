@@ -65,7 +65,6 @@ const page = () => {
                          spaceBetween: 0,
                        },
                      }}
-                     data-aos="fade-right" 
                      className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6"
                    >
                      <SwiperSlide className=''>
