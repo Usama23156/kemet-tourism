@@ -4,7 +4,7 @@ export const OurEscapes = [
         id:1, 
         img:["/IMG_6812.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"Serenity Escape",
-        price:"Starts at $999",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
@@ -12,7 +12,7 @@ export const OurEscapes = [
         id:2, 
         img:["Kemet-tales2.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"KEMET Tales",
-        price:"Starts at $1500",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
@@ -20,7 +20,7 @@ export const OurEscapes = [
         id:3, 
         img:["/R&R-Escapes3.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"R & R Escape",
-        price:"Starts at $3000",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
@@ -28,7 +28,7 @@ export const OurEscapes = [
         id:4, 
         img:["/Soul-of-Egypt.jpg","/IMG_6812.jpg", "/IMG_6459.jpg"],
         name:"SOUL OF EGYPT",
-        price:"Starts at $999",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
@@ -36,7 +36,7 @@ export const OurEscapes = [
         id:5, 
         img:["/IMG_5195.jpg", "/IMG_1936.jpg", "/IMG_6459.jpg"],
         name:"AUTHENTICITY",
-        price:"Starts at $1500",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],       
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
@@ -44,7 +44,7 @@ export const OurEscapes = [
         id:6, 
         img:["/Tranquility.jpg" ,"/IMG_6812.jpg", "/IMG_1936.jpg"],
         name:"TRANQUILITY",
-        price:"Starts at $3000",
+        price:"Starts at $1999",
         features:[ "Welcome drink", "7D/6N Twin share room","Round Nile Sailing", "Full board meals" , "Guided Historical Escapes"],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
