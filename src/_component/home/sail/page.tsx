@@ -28,7 +28,7 @@ function page() {
         <div className='flex  items-center'>
           <img data-aos="fade-right" src="/triangles001.png" alt="" className='lg:max-w-96 md:max-w-80 max-w-52 absolute  left-0 lg:left-1/5  hover:scale-105 transition-all duration-300' />
           <img data-aos="fade-up" src="/triangles004.png" alt="" className='lg:max-w-96 md:max-w-80 max-w-52  hover:scale-105 transition-all duration-300' />
-          <img data-aos="fade-left" src="/trangles003.png" alt="" className='lg:max-w-96 md:max-w-80 max-w-52 absolute  right-0 lg:right-1/5 hover:scale-105 transition-all duration-300' />
+          <img data-aos="fade-right" src="/trangles003.png" alt="" className='lg:max-w-96 md:max-w-80 max-w-52 absolute  right-0 lg:right-1/5 hover:scale-105 transition-all duration-300' />
         </div>
         
      </div>
