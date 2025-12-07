@@ -1,5 +1,4 @@
 import React from 'react'
-import EscapsHome from "../../_component/home/EscapsHome/page"
 import Escapes from '../../_component/escapes/page'
 
 const page = () => {
