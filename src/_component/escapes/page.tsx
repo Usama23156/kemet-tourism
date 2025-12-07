@@ -29,3 +29,43 @@ function page() {
 }
 
 export default page
+// import React from 'react';
+// import { escapesData } from './data'; // Adjust the path if needed
+
+// function Page() {
+//   return (
+//     <div>
+//       <h3 className='font-bold text-center text-3xl'>Escapes Page</h3>
+//       <div>
+//         {escapesData.map((escape, index) => (
+//           <div
+//             key={escape.id}
+//             className={`max-w-3xl flex gap-4 mx-auto my-10 p-4 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+//           >
+//             {index % 2 === 0 ? (
+//               <>
+//                 <img src={escape.imageUrl} alt={escape.title} width={200} height={100} />
+//                 <div>
+//                   <h4>{escape.title}</h4>
+//                   <p>{escape.description}</p>
+//                   <p>{escape.details}</p>
+//                 </div>
+//               </>
+//             ) : (
+//               <>
+//                 <div>
+//                   <h4>{escape.title}</h4>
+//                   <p>{escape.description}</p>
+//                   <p>{escape.details}</p>
+//                 </div>
+//                 <img src={escape.imageUrl} alt={escape.title} width={200} height={100} />
+//               </>
+//             )}
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Page;

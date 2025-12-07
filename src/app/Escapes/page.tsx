@@ -1,6 +1,5 @@
 import React from 'react'
 import Escapes from '../../_component/escapes/page'
-
 const page = () => {
   
   return (
