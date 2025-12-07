@@ -29,6 +29,8 @@ function page() {
 }
 
 export default page
+
+
 // import React from 'react';
 // import { escapesData } from './data'; // Adjust the path if needed
 
