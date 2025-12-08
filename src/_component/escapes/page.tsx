@@ -28,10 +28,10 @@ function Page() {
           >
             {index % 2 === 0 ? (
               <>
-                <img src={escape.img} alt={escape.name} width={200} height={100} />
+                <img src={escape.img} alt={escape.name} width={200} height={100} className='rounded-2xl'/>
                 <div>
-                  <h4 className={`text-3xl pb-0 ${AlluraFont.className}`}>{escape.name}</h4>
-                  <p className={`text-xl pb-3 ${LatoFont.className}`}>{escape.discrption}</p>
+                  <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
+                  <p className={`text-2xl pb-3 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
                     {escape.packages.map((pkg, pkgIndex) => (
                       <div key={pkgIndex} >
@@ -44,8 +44,8 @@ function Page() {
             ) : (
               <>
                 <div>
-                  <h4 className={`text-3xl pb-0 ${AlluraFont.className}`}>{escape.name}</h4>
-                  <p className={`text-xl pb-3 ${LatoFont.className}`}>{escape.discrption}</p>
+                  <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
+                  <p className={`text-2xl pb-3 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
                     {escape.packages.map((pkg, pkgIndex) => (
                       <div key={pkgIndex} >
@@ -54,7 +54,7 @@ function Page() {
                     ))}
                   </div>
                 </div>
-                <img src={escape.img} alt={escape.name} width={200} height={100} />
+                <img src={escape.img} alt={escape.name} width={200} height={100} className='rounded-2xl'/>
               </>
             )}
           </div>

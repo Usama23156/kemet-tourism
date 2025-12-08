@@ -206,7 +206,7 @@ export const escapesData = [
         id:2, 
         name:"Historical Escapes",
         discrption:"Follow the footsteps of the pharaohs and uncover the essence of ancient Egypt.",
-        img:"/IMG_6812.jpg",
+        img:"/Kemet-tales2.jpg",
         packages:[ {
             id:1,
             name:"KEMET Tales  – A profound historical journey from Cairo to Luxor and Aswan, merging storytelling with exploration.",
@@ -224,7 +224,7 @@ export const escapesData = [
         id:3, 
         name:"Tranquility Escapes",
         discrption:"Peaceful retreats designed for rest, renewal, and mindfulness.",
-        img:"/IMG_6812.jpg",
+        img:"/R&R-Escapes3.jpg",
         packages:[ {
             id:1,
             name:"R & R Escape (Rest & Reconnect) – A calm itinerary blending nature, spa time, and slow travel along the Nile or in Siwa Oasis.",
@@ -242,7 +242,7 @@ export const escapesData = [
         id:4, 
         name:"Adventure Escapes",
         discrption:"For travelers who crave movement, thrill, and the unknown.",
-        img:"/IMG_6812.jpg",
+        img:"/Soul-of-Egypt.jpg",
         packages:[ {
             id:1,
             name:"Desert Odyssey – A 4x4 expedition through the White and Black Deserts.",
@@ -260,7 +260,7 @@ export const escapesData = [
         id:5, 
         name:"Authenticity Escapes",
         discrption:"Experiences designed to reveal Egypt’s living culture — its people, crafts, cuisine, and everyday life.",
-        img:"/IMG_6812.jpg",
+        img:"/Tranquility.jpg",
         packages:[ {
             id:1,
             name:"Authenticity Journey – Meet local families, visit traditional markets, and discover artisans from Luxor to Aswan.",
@@ -278,7 +278,7 @@ export const escapesData = [
         id:6, 
         name:"Spiritual & Wellness Escapes",
         discrption:"Created for those seeking reflection, balance, and soulful connection.",
-        img:"/IMG_6812.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"Soul of Egypt – (Also part of Historical Escapes) A sacred journey blending temple visits with guided meditation and energy work.",
@@ -296,7 +296,7 @@ export const escapesData = [
         id:7, 
         name:"Customized Private Escapes",
         discrption:"Tailor-made itineraries for travelers who wish to design their own journey.",
-        img:"/IMG_6812.jpg",
+        img:"/IMG_3426 2.jpg",
         packages:[ {
             id:1,
             name:"Signature Private Escape – Fully personalized itineraries featuring private guides and handpicked accommodations.",
