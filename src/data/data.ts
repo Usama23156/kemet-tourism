@@ -195,11 +195,13 @@ export const escapesData = [
         img:"/IMG_6812.jpg",
         packages:[ {
             id:1,
-            name:"Dahabiya Serenity Journey – Sail luxuriously between Esna and Aswan aboard a traditional Dahabiya, embracing tranquility and authentic encounters.",
+            name:"Dahabiya Serenity Journey ",
+            details:'– Sail luxuriously between Esna and Aswan aboard a traditional Dahabiya, embracing tranquility and authentic encounters.'
         },
         {
             id:2,
-            name:"Nile Harmony Escape – A cultural blend of temples, local villages, and timeless river life.",
+            name:"Nile Harmony Escape ",
+            details:'– A cultural blend of temples, local villages, and timeless river life.'
         }
     ]},
     {
@@ -209,15 +211,18 @@ export const escapesData = [
         img:"/Kemet-tales2.jpg",
         packages:[ {
             id:1,
-            name:"KEMET Tales  – A profound historical journey from Cairo to Luxor and Aswan, merging storytelling with exploration.",
+            name:"KEMET Tales  ",
+            details:'– A profound historical journey from Cairo to Luxor and Aswan, merging storytelling with exploration.'
         },
         {
             id:2,
-            name:"Soul of Egypt – Discover Egypt’s most sacred sites, from the Pyramids and Saqqara to Philae and Karnak, with added spiritual insight.",
+            name:"Soul of Egypt",
+            details:' – Discover Egypt’s most sacred sites, from the Pyramids and Saqqara to Philae and Karnak, with added spiritual insight.'
         },
         {
             id:3,
-            name:"Legacy of the Pharaohs – A comprehensive classical route combining Cairo, Luxor, Aswan, and Abu Simbel.",
+            name:"Legacy of the Pharaohs ",
+            details:'– A comprehensive classical route combining Cairo, Luxor, Aswan, and Abu Simbel.'
         }
     ]},
     {
@@ -227,15 +232,18 @@ export const escapesData = [
         img:"/R&R-Escapes3.jpg",
         packages:[ {
             id:1,
-            name:"R & R Escape (Rest & Reconnect) – A calm itinerary blending nature, spa time, and slow travel along the Nile or in Siwa Oasis.",
+            name:"R & R Escape (Rest & Reconnect) ",
+            details:'– A calm itinerary blending nature, spa time, and slow travel along the Nile or in Siwa Oasis.'
         },
         {
             id:2,
-            name:"Serenity Escape – Ideal for meditation, yoga, or simply disconnecting amid Egypt’s serene deserts and oases.",
+            name:"Serenity Escape ",
+            details:'– Ideal for meditation, yoga, or simply disconnecting amid Egypt’s serene deserts and oases.'
         },
         {
             id:3,
-            name:"Oasis of Silence – A retreat in Siwa or Fayoum surrounded by salt lakes, palm trees, and starry skies.",
+            name:"Oasis of Silence ",
+            details:'– A retreat in Siwa or Fayoum surrounded by salt lakes, palm trees, and starry skies.'
         }
     ]},
     {
@@ -245,15 +253,18 @@ export const escapesData = [
         img:"/Soul-of-Egypt.jpg",
         packages:[ {
             id:1,
-            name:"Desert Odyssey – A 4x4 expedition through the White and Black Deserts.",
+            name:"Desert Odyssey",
+            details:' – A 4x4 expedition through the White and Black Deserts.'
         },
         {
             id:2,
-            name:"Sinai Quest – Climb Mount Sinai, dive into the Red Sea, and explore Bedouin trails.",
+            name:"Sinai Quest ",
+            details:'– Climb Mount Sinai, dive into the Red Sea, and explore Bedouin trails.'
         },
         {
             id:3,
-            name:"Beyond the Sands – A dynamic adventure combining desert trekking, sandboarding, and camping under the stars.",
+            name:"Beyond the Sands ",
+            details:'– A dynamic adventure combining desert trekking, sandboarding, and camping under the stars.'
         }
     ]},
     {
@@ -263,15 +274,18 @@ export const escapesData = [
         img:"/Tranquility.jpg",
         packages:[ {
             id:1,
-            name:"Authenticity Journey – Meet local families, visit traditional markets, and discover artisans from Luxor to Aswan.",
+            name:"Authenticity Journey ",
+            details:'– Meet local families, visit traditional markets, and discover artisans from Luxor to Aswan.'
         },
         {
             id:2,
-            name:"Village Life Escape – Immerse yourself in rural Egypt, learn ancient crafts, and cook local dishes.",
+            name:"Village Life Escape ",
+            details:'– Immerse yourself in rural Egypt, learn ancient crafts, and cook local dishes.'
         },
         {
             id:3,
-            name:"Nubian Colors & Culture – A vibrant journey through Nubian villages and traditions.",
+            name:"Nubian Colors & Culture ",
+            details:'– A vibrant journey through Nubian villages and traditions.'
         }
     ]},
     {
@@ -281,33 +295,39 @@ export const escapesData = [
         img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
-            name:"Soul of Egypt – (Also part of Historical Escapes) A sacred journey blending temple visits with guided meditation and energy work.",
+            name:"Soul of Egypt ",
+            details:'– (Also part of Historical Escapes) A sacred journey blending temple visits with guided meditation and energy work.'
         },
         {
             id:2,
-            name:"Temple of Light – A spiritual route focusing on powerful temples such as Dendera, Abydos, Philae, and Kom Ombo.",
+            name:"Temple of Light ",
+            details:'– A spiritual route focusing on powerful temples such as Dendera, Abydos, Philae, and Kom Ombo.'
         },
         {
             id:3,
-            name:"Energy of the Nile – A mindful experience combining sailing, breathwork, and energy cleansing inspired by ancient Egyptian spirituality.",
+            name:"Energy of the Nile ",
+            details:'– A mindful experience combining sailing, breathwork, and energy cleansing inspired by ancient Egyptian spirituality.'
         }
     ]},
     {
         id:7, 
         name:"Customized Private Escapes",
         discrption:"Tailor-made itineraries for travelers who wish to design their own journey.",
-        img:"/IMG_3426 2.jpg",
+        img:"/IMG_6812.jpg",
         packages:[ {
             id:1,
-            name:"Signature Private Escape – Fully personalized itineraries featuring private guides and handpicked accommodations.",
+            name:"Signature Private Escape ",
+            details:'– Fully personalized itineraries featuring private guides and handpicked accommodations.'
         },
         {
             id:2,
-            name:"Family & Friends Escape – Curated for small groups seeking comfort, connection, and cultural depth.",
+            name:"Family & Friends Escape",
+            details:' – Curated for small groups seeking comfort, connection, and cultural depth.'
         },
         {
             id:3,
-            name:"Honeymoon Escape – Romantic, serene routes along the Nile or through Egypt’s desert oases.",
+            name:"Honeymoon Escape",
+            details:'– Romantic, serene routes along the Nile or through Egypt’s desert oases.'
         }
     ]},
     
