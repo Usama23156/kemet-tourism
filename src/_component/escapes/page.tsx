@@ -93,7 +93,7 @@ function Page() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={true}
         navigation
         pagination={{ clickable: true }}
