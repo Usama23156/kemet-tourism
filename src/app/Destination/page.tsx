@@ -33,9 +33,8 @@ const page = () => {
   return (
     <>
     <div className='flex justify-center items-center flex-col pt-28 gap-y-8  '>
-    <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
-    <div className='relative px-52 ml-20
-    '>
+    <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold px-3 ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
+    <div className='relative md:px-52 md:ml-20 px-9'>
 <img  data-aos="fade-up" src="/map-destination.png" alt="" className=' max-w-full container lg:max-w-fit '/>        
 <Link href={`/Destination/DestinationDetails?id=${destination[0].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-2/5  lg:right-80 cursor-pointer hover:scale-110 duration-initial transition-transform '>
             <img src={destination[0].img} alt="" className='lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8 rounded-[50%]'/>
@@ -69,7 +68,7 @@ const page = () => {
             <img src={destination[10].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
             <h3 className='font-bold  lg:text-80 text-xs'>{destination[10].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[9].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-[980px]  lg:right-[580px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+        <Link href={`/Destination/DestinationDetails?id=${destination[9].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[210px] lg:bottom-[580px]  lg:right-[580px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
             <img src={destination[9].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
             <h3 className='font-bold  lg:text-80 text-xs'>{destination[9].name}</h3>
         </Link>

@@ -256,18 +256,6 @@ export const OurDestination = [
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
-    {
-        id:12, 
-        img:"/IMG_6450.jpg",
-        name:"Dahab",
-        temp:[{
-            id:1,
-            name:"Sharm Elshikh beach",
-            img:"/abu simble.jpg",
-            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
-        }],              
-        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
-    },
 ]
 
 export const escapesData = [
