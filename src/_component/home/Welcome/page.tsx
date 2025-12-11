@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
     <div style={{ backgroundImage: `url(/bg.png)` }}
-            className=" bg-no-repeat bg-cover bg-center">
+            className=" bg-no-repeat bg-cover bg-center pt-36">
       <div className="md:flex justify-center items-center px-6 lg:px-32 gap-10 py-6 ">
         <div className="md:w-[47%] md:pt-12 items-center lg:items-start lg:gap-y-0 gap-y-8 flex flex-col">
           <h2 data-aos="fade-up" className={`font-semibold lg:text-4xl text-3xl ${CinzelFont.className}`}> Travel made easy </h2>
@@ -32,7 +32,7 @@ const page = () => {
             </button>
           </div>
         </div>
-        <div data-aos="fade-left" className="md:w-[47%]">
+        <div data-aos="fade-left" className="md:w-[38%]">
             <img src="/welcome.jpg" alt="" className="min-w-20 rounded-4xl " />
         </div>
       </div>
