@@ -44,7 +44,7 @@ function Page() {
         <h3 data-aos="fade-right" className={`pt-9 text-xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}>
           Escape the Ordinary
         </h3>
-        <img data-aos="fade-left" src="/Pyramids.png" alt="" className='lg:max-w-80 max-w-36'/>
+        <img data-aos="fade-left" src="/Pyramids-1.png" alt="" className='lg:max-w-80 max-w-36'/>
       </div>
       <div>
         {escapesData.map((escape, index) => (
