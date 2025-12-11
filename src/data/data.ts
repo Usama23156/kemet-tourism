@@ -185,6 +185,77 @@ export const OurDestination = [
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
+    {
+        id:7, 
+        img:"/IMG_6450.jpg",
+        name:"Hurgada",
+        temp:[{
+            id:1,
+            name:"hurgada beach",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        }],              
+        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+    },
+    {
+        id:8, 
+        img:"/IMG_6450.jpg",
+        name:"Alex",
+        temp:[{
+            id:1,
+            name:"Alex lib",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        },{
+            id:2,
+            name:"Alex beach",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        }],              
+        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+    },
+    {
+        id:9, 
+        img:"/IMG_6450.jpg",
+        name:"Siwa",
+        temp:[{
+            id:1,
+            name:"Siwa ",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        }],              
+        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+    },
+    {
+        id:10, 
+        img:"/IMG_6450.jpg",
+        name:"Cairo/Giza",
+        temp:[{
+            id:1,
+            name:"pyramids",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        },
+    {
+            id:2,
+            name:"el qal3a",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        }],              
+        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+    },
+    {
+        id:11, 
+        img:"/IMG_6450.jpg",
+        name:"Sharm Elshikh",
+        temp:[{
+            id:1,
+            name:"Sharm Elshikh beach",
+            img:"/abu simble.jpg",
+            info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
+        }],              
+        discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+    },
 ]
 
 export const escapesData = [
