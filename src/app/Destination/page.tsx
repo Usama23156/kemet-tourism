@@ -34,7 +34,7 @@ const page = () => {
     <>
     <div className='flex justify-center items-center flex-col pt-28 gap-y-8  '>
     <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
-    <div className='relative '>
+    <div className='relative px-16'>
 <img  data-aos="fade-up" src="/map-destination.png" alt="" className=' max-w-full container lg:max-w-fit '/>        
 <Link href={`/Destination/DestinationDetails?id=${destination[0].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-2/5  lg:right-80 cursor-pointer hover:scale-110 duration-initial transition-transform '>
             <img src={destination[0].img} alt="" className='lg:w-16 lg:h-16 md:h-14 md:w-14 h-8 w-8 rounded-[50%]'/>
