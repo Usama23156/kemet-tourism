@@ -187,7 +187,7 @@ export const OurDestination = [
     },
     {
         id:7, 
-        img:"/IMG_6450.jpg",
+        img:"/hurgada.png",
         name:"Hurgada",
         temp:[{
             id:1,
@@ -199,7 +199,7 @@ export const OurDestination = [
     },
     {
         id:8, 
-        img:"/IMG_6450.jpg",
+        img:"/alex.jfif",
         name:"Alex",
         temp:[{
             id:1,
@@ -216,19 +216,19 @@ export const OurDestination = [
     },
     {
         id:9, 
-        img:"/IMG_6450.jpg",
+        img:"/siwa.jfif",
         name:"Siwa",
         temp:[{
             id:1,
             name:"Siwa ",
-            img:"/abu simble.jpg",
+            img:"/siwa.jfif",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
-        }],              
+        },],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
     },
     {
         id:10, 
-        img:"/IMG_6450.jpg",
+        img:"/Pyramid.png",
         name:"Cairo/Giza",
         temp:[{
             id:1,
@@ -246,7 +246,7 @@ export const OurDestination = [
     },
     {
         id:11, 
-        img:"/IMG_6450.jpg",
+        img:"/sharm.jfif",
         name:"Sharm Elshikh",
         temp:[{
             id:1,

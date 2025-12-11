@@ -36,49 +36,49 @@ const page = () => {
     <p  data-aos="fade-up" className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold px-3 ${CinzelFont.className}`}>The Nile carries more than water; it carries Egypt’s soul.</p>
     <div className='relative md:px-52 md:ml-20 px-9'>
 <img  data-aos="fade-up" src="/map-destination.png" alt="" className=' max-w-full container lg:max-w-fit '/>        
-<Link href={`/Destination/DestinationDetails?id=${destination[0].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-2/5  lg:right-80 cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[0].img} alt="" className='lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8 rounded-[50%]'/>
-            <h3 className='font-bold lg:text-80 text-xs'>{destination[0].name}</h3>
+<Link href={`/Destination/DestinationDetails?id=${destination[0].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[150px] right-[110px] lg:bottom-2/5  lg:right-96 cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[0].img} alt="" className='lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5 rounded-[50%]'/>
+            <h3 className='lg:font-bold lg:text-80 text-xs'>{destination[0].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[1].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute lg:right-[470px] lg:bottom-2/6 bottom-[165px] right-44  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[1].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[1].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[1].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute lg:right-[470px] lg:bottom-2/6 bottom-[125px] right-40  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[1].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[1].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[2].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[110px] right-[140px] lg:bottom-[310px] lg:right-[420px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[2].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[2].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[2].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[80px] right-[140px] lg:bottom-[185px] lg:right-[450px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[2].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[2].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[3].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[90px] right-[60px] lg:bottom-[250px] lg:right-[230px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[3].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[3].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[3].id}`}  data-aos="fade-left" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[90px] right-[65px] lg:bottom-[200px] lg:right-[330px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[3].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[3].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[4].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[70px] right-[170px] lg:bottom-[180px] lg:right-[390px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[4].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[4].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[4].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[50px] right-[170px] lg:bottom-[110px] lg:right-[460px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[4].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[4].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[5].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[30px] right-[75px] lg:right-[500px] lg:bottom-[80px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[5].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[5].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[5].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[30px] right-[75px] lg:right-[530px] lg:bottom-[60px] cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[5].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[5].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[6].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-2/5  lg:right-24  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[6].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[6].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[6].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[140px] right-[40px] lg:bottom-2/5  lg:right-60  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[6].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[6].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[10].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-[700px]  lg:right-24  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[10].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[10].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[10].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[190px] right-[30px] lg:bottom-[450px]  lg:right-52  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[10].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[10].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[9].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[210px] lg:bottom-[580px]  lg:right-[580px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[9].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[9].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[9].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[270px] right-[200px] lg:bottom-[580px]  lg:right-[580px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[9].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[9].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[8].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-[780px]  lg:right-[980px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[8].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[8].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[8].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[290px] lg:bottom-[480px]  lg:right-[780px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[8].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[8].name}</h3>
         </Link>
-        <Link href={`/Destination/DestinationDetails?id=${destination[7].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[200px] right-[110px] lg:bottom-[1030px]  lg:right-[780px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
-            <img src={destination[7].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-8 w-8'/>
-            <h3 className='font-bold  lg:text-80 text-xs'>{destination[7].name}</h3>
+        <Link href={`/Destination/DestinationDetails?id=${destination[7].id}`}  data-aos="fade-right" className='flex flex-col justify-center items-center gap-1 mt-6 absolute bottom-[280px] right-[270px] lg:bottom-[630px]  lg:right-[720px]  cursor-pointer hover:scale-110 duration-initial transition-transform '>
+            <img src={destination[7].img} alt="" className=' rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5'/>
+            <h3 className='lg:font-bold  lg:text-80 text-xs'>{destination[7].name}</h3>
         </Link>
     </div>
       <Swiper
