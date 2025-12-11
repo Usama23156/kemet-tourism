@@ -1,7 +1,13 @@
-import React from 'react'
+"use client";
 import { Cinzel } from 'next/font/google'
 import { OurDestination } from '@/data/data'
 import Link from "next/link";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 const destination: {
   id: number;
@@ -75,7 +81,52 @@ const page = () => {
             <h3 className='font-bold  lg:text-lg text-xs'>{destination[7].name}</h3>
         </Link>
     </div>
-      
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={1}
+        loop={true}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          868: {
+            slidesPerView: 4,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+        }}
+        className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6"
+      >
+        {destination.map((dest) => (
+          <SwiperSlide key={dest.id}>
+            <div data-aos="fade-right" className="flex flex-col justify-center items-center gap-y-6 rounded-3xl pb-3 hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="flex flex-col justify-center items-center gap-y-3 relative opacity-75 hover:opacity-100">
+                <img
+                  src={dest.temp[0]?.img} // Use the image of the first temperature
+                  alt={dest.temp[0]?.name}
+                  className="lg:max-w-64 md:max-w-80 max-h-80 rounded-2xl rounded-b-none max-w-96"
+                />
+                <div className="max-w-md flex flex-col left-6 gap-y-3 absolute bottom-0 w-full py-3">
+                  <h3 className="md:text-sm text-2xl font-bold">{dest.temp[0]?.name}</h3>
+                  {/* Optionally, display more information like the temp directly */}
+                  <p className="md:text-sm text-2xl font-bold">{dest.temp[0]?.info}</p>
+                </div>
+              </div>
+              <Link href={`/Destination/DestinationDetails?id=${dest.id}`}>
+                <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
+                  VIEW DETAILS    
+                </button>
+              </Link>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
     </>
   )
