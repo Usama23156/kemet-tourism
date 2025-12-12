@@ -192,7 +192,7 @@ export const OurDestination = [
         temp:[{
             id:1,
             name:"hurgada beach",
-            img:"/abu simble.jpg",
+            img:"/hurgada.png",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
@@ -204,12 +204,12 @@ export const OurDestination = [
         temp:[{
             id:1,
             name:"Alex lib",
-            img:"/abu simble.jpg",
+            img:"/alex.jfif",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         },{
             id:2,
             name:"Alex beach",
-            img:"/abu simble.jpg",
+            img:"/alex.jfif",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
@@ -233,7 +233,7 @@ export const OurDestination = [
         temp:[{
             id:1,
             name:"pyramids",
-            img:"/abu simble.jpg",
+            img:"/IMG_2033.jpg",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         },
     {
@@ -251,7 +251,7 @@ export const OurDestination = [
         temp:[{
             id:1,
             name:"Sharm Elshikh beach",
-            img:"/abu simble.jpg",
+            img:"/sharm.jfif",
             info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo animi quaerat ex assumenda iusto."
         }],              
         discrption:"Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
