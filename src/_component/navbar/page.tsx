@@ -63,7 +63,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-          <div className="relative">
+          <div className="relative pr-5">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className={` text-2xl ${scrollPosition > 50 ?  'text-[#b49e09]' : 'text-white' } bg-transparent  rounded cursor-pointer`}

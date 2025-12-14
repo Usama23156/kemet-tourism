@@ -122,7 +122,7 @@ const page = () => {
             <img
               src={destination[5].img}
               alt=""
-              className=" rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5"
+              className=" rounded-[50%] lg:w-12 lg:h-12 md:h-14 md:w-14 h-5 w-5 "
             />
             <h3 className="lg:font-bold  lg:text-80 text-xs">
               {destination[5].name}
