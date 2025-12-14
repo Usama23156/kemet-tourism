@@ -23,7 +23,7 @@ const page = () => {
             muted
             loop
             preload='metadata'
-            className='w-full h-full object-cover'/>
+            className='w-full h-full object-cover [mask-image:linear-gradient(to_bottom,blue_80%,transparent)]'/>
             <div className="absolute z-[100] top-[50%] left-[50%] w-full h-full translate-y-[-50%] translate-x-[-50%]">
                 <div className='flex flex-col justify-center items-center w-full h-full '>
                     <div>

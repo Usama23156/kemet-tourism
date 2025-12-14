@@ -51,8 +51,8 @@ function Page() {
           <div key={escape.id} className={`max-w-5xl md:flex gap-4 mx-auto my-10 p-4 `}>
             {index % 2 === 0 ? (
               <>
-              <div className='relative md:flex md:justify-start pt-8'>
-                <div className='absolute md:static z-10 '>
+              <div className='relative md:flex md:justify-start pt-8 pb-8'>
+                <div className='absolute md:static z-10 top-2 bg-'>
                   <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
                   <p className={`text-2xl pb-9 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
@@ -71,9 +71,9 @@ function Page() {
               </>
             ) : (
               <>
-              <div className='relative md:flex md:justify-end pb-8'>
+              <div className='relative md:flex md:justify-end pb-8 pt-8'>
                 <img src={escape.img} alt={escape.name} className='rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_bottom,blue_50%,transparent)] md:[mask-image:linear-gradient(to_right,blue_50%,transparent)] '/>
-                <div className=' absolute md:static top-28'>
+                <div className=' absolute md:static top-7'>
                   <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
                   <p className={`text-2xl pb-9 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
