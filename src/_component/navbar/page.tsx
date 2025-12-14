@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link'; 
 import { FaBars } from 'react-icons/fa'; 
 import { Cinzel } from 'next/font/google'
+import { FaRegCircleUser } from 'react-icons/fa6';
+
 
  const CinzelFont = Cinzel({
   subsets: ['latin'],
@@ -15,7 +17,7 @@ export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [open, setOpen] = useState(false);
-
+  const [dropdownOpen, setDropdownOpen] = useState(false);
  
 
   useEffect(() => {
@@ -56,11 +58,25 @@ export default function Navbar() {
             <li className="relative">
               <Link href="/Escapes" onClick={() => setOpen(false)} className={`font-bold text-xl hover:text-[#b49e09]  ${scrollPosition > 50 ? 'md:text-[#b49e09] hover:text-white' : 'md:text-[color:var(--main-color)]'} ${CinzelFont.className}`}>Escapes</Link>
             </li>
+            <li className="relative">
+              <Link href="/About" onClick={() => setOpen(false)} className={`font-bold text-xl hover:text-[#b49e09]  ${scrollPosition > 50 ? 'md:text-[#b49e09] hover:text-white' : 'md:text-[color:var(--main-color)]'} ${CinzelFont.className}`}>About Us</Link>
+            </li>
           </ul>
-          <button className='  px-[1.4rem] py-[0.7rem]  lg:px-[1.2rem] lg:py-[0.6rem]'>
-          <Link href="/About" onClick={() => setOpen(false)} className={`font-bold text-xl hover:text-[#b49e09] ${scrollPosition > 50 ? 'md:text-[#b49e09] hover:text-white' : 'md:text-[color:var(--main-color)]'} ${CinzelFont.className}`}>About Us</Link>
-          </button>
         </div>
+          <div className="relative">
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className={` text-2xl ${scrollPosition > 50 ?  'text-[#b49e09]' : 'text-white' } bg-transparent  rounded cursor-pointer`}
+              >
+              <FaRegCircleUser />
+              </button>
+              {dropdownOpen && (
+                <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-300 shadow-lg rounded z-10">
+                  <Link href="/login" className="block px-4 py-2 text-sm hover:bg-gray-100 text-black">Login</Link>
+                  <Link href="/signup" className="block px-4 py-2 text-sm hover:bg-gray-100 text-black">Signup</Link>
+                </div>
+              )}
+            </div>
       </div>
     </div>
     </>

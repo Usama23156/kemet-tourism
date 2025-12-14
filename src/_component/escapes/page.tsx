@@ -48,10 +48,11 @@ function Page() {
       </div>
       <div>
         {escapesData.map((escape, index) => (
-          <div key={escape.id} className={`max-w-5xl md:flex gap-4 mx-auto my-10 p-4`}>
+          <div key={escape.id} className={`max-w-5xl md:flex gap-4 mx-auto my-10 p-4 `}>
             {index % 2 === 0 ? (
               <>
-                <div>
+              <div className='relative md:flex md:justify-start pt-8'>
+                <div className='absolute md:static z-10 '>
                   <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
                   <p className={`text-2xl pb-9 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
@@ -65,12 +66,14 @@ function Page() {
                     ))}
                   </div>
                 </div>
-                <img src={escape.img} alt={escape.name} className='rounded-2xl md:w-56 w-full'/>
+                <img src={escape.img} alt={escape.name} className='rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_top,blue_50%,transparent)] md:[mask-image:linear-gradient(to_left,blue_50%,transparent)] '/>
+                 </div>
               </>
             ) : (
               <>
-                <img src={escape.img} alt={escape.name} className='rounded-2xl md:w-56 w-full'/>
-                <div>
+              <div className='relative md:flex md:justify-end pb-8'>
+                <img src={escape.img} alt={escape.name} className='rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_bottom,blue_50%,transparent)] md:[mask-image:linear-gradient(to_right,blue_50%,transparent)] '/>
+                <div className=' absolute md:static top-28'>
                   <h4 className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}>{escape.name}</h4>
                   <p className={`text-2xl pb-9 ${LatoFont.className}`}>{escape.discrption}</p>
                   <div>
@@ -84,6 +87,7 @@ function Page() {
                     ))}
                   </div>
                 </div>
+              </div>
               </>
             )}
           </div>
@@ -110,7 +114,9 @@ function Page() {
             spaceBetween: 0,
           },
         }}
-        className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6"
+        style={{ backgroundImage: `url(/nile.jpg)` }}
+        className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6  bg-no-repeat bg-cover bg-fixed bg-center bg-blue-500 
+  [mask-image:linear-gradient(to_left,blue_80%,transparent)]"
       >
         {Escapes.map((escape) => (
           <SwiperSlide key={escape.id}>
@@ -128,7 +134,7 @@ function Page() {
                 </div>
               </div>
               {escape.features.map((feature, index) => (
-                <p key={index} className="lg:text-sm text-2xl h-3 lg:h-0">{feature}</p>
+                <p key={index} className={` lg:text-sm font-bold text-2xl h-3 lg:h-0  ${CinzelFont.className} `}>{feature}</p>
               ))}
               <Link href={`/Escapes/EscapesDetails?id=${escape.id}`}>
                 <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
