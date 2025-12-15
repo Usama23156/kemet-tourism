@@ -29,5 +29,19 @@
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "<!-- سحب ال main  -->\r git checkout main\r git pull origin main",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usama23156/kemet-tourism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Usama23156/kemet-tourism/issues"
+  },
+  "homepage": "https://github.com/Usama23156/kemet-tourism#readme"
 }
