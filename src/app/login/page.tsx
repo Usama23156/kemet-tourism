@@ -4,7 +4,7 @@ function page() {
   return (
     <>
       <div className="min-h-screen flex items-center justify-center pt-20">
-        <div className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/20">
+        <div data-aos="fade-right" className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/20">
 
           {/* Title */}
           <h1 className="text-3xl font-bold text-center text-white mb-6">
@@ -63,8 +63,8 @@ function page() {
 
           {/* Register */}
           <p className="text-center text-gray-400 text-sm mt-8">
-            Don’t have an account?
-            <a href="#" className="text-white hover:underline">
+            Don’t have an account?{" "}
+            <a href="Signup" className="text-white hover:underline">
               Sign up
             </a>
           </p>

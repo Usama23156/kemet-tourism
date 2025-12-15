@@ -4,15 +4,15 @@ function page() {
     return (
         <>
 
-            <div className="min-h-screen flex items-center justify-center pt-20">
-                <div className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/10">
+            <div className="min-h-screen flex items-center justify-center pt-30 pb-20">
+                <div data-aos="fade-right" className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/10">
 
                     {/* Title */}
                     <h1 className="text-3xl font-bold text-center text-white mb-6">
                         Create Account
                     </h1>
                     <p className="text-center text-gray-400 mb-8">
-                        Join us and start your journey
+                        Join Us And Start Your Escape
                     </p>
 
                     {/* Form */}
