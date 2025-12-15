@@ -39,19 +39,14 @@ const Escapes: {
 function Page() {
   return (
     <div>
-      <div className="flex justify-center items-center pt-6 gap-x-3">
+      <div className="flex justify-center items-center pt-6 gap-x-3 relative">
         <h3
           data-aos="fade-right"
-          className={`pt-9 text-xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}
+          className={`pt-9 text-xl md:text-4xl lg:text-5xl z-40 ${CinzelFont.className}`}
         >
           Escape the Ordinary
         </h3>
-        <img
-          data-aos="fade-left"
-          src="/Pyramids-1.png"
-          alt=""
-          className="lg:max-w-80 max-w-36"
-        />
+         <svg className=" absolute lg:right-80 nectar-scribble circle lg:w-80 w-28 right-28 top-10 lg:top-0" viewBox="0 0 800 350" preserveAspectRatio="none"><path  transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)" stroke-linejoin="miter" fill-opacity="0" pathLength="1" stroke-miterlimit="4" stroke="#b49e09" stroke-opacity="1" stroke-width="8" d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"></path></svg>
       </div>
       <div>
         {escapesData.map((escape, index) => (
@@ -97,16 +92,15 @@ function Page() {
                   <img
                     src={escape.img}
                     alt={escape.name}
-                    className="rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_bottom,blue_50%,transparent)] md:[mask-image:linear-gradient(to_right,blue_50%,transparent)] "
+                    className="rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_top,blue_50%,transparent)] md:[mask-image:linear-gradient(to_right,blue_50%,transparent)] "
                   />
-                  <div className=" absolute md:static top-24 md:top-0 z-10 ">
+                  <div className=" absolute md:static top-16 md:top-0 z-10 ">
                     <h4
-                      className={`text-3xl pb-0 text-[#b49e09] bg-blue-950 px-2 mb-2 opacity-70 w-fit rounded-xl border-1 ${AlluraFont.className}`}
+                      className={`text-3xl pb-0 text-[#b49e09]  ${AlluraFont.className}`}
                     >
                       {escape.name}
                       
                     </h4>
-                    {/* <svg className="nectar-scribble circle w-52" viewBox="0 0 800 350" preserveAspectRatio="none"><path  transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)" stroke-linejoin="miter" fill-opacity="0" pathLength="1" stroke-miterlimit="4" stroke="#b49e09" stroke-opacity="1" stroke-width="8" d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"></path></svg> */}
                     <p className={`text-2xl pb-9 ${LatoFont.className}`}>
                       {escape.discrption}
                     </p>
