@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center pt-20">
+      <div className="min-h-screen flex items-center justify-center  pt-30 pb-20">
         <div data-aos="fade-right" className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/20">
 
           {/* Title */}

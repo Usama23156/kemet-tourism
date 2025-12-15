@@ -163,7 +163,7 @@ function Page() {
                 data-aos="fade-right"
                 className="flex flex-col justify-center items-center gap-y-6 border-1 border-[#b49e09] w-[80%] md:w-full rounded-3xl pb-3 hover:scale-105 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex flex-col justify-center items-center gap-y-3 relative opacity-75 hover:opacity-100">
+                <div className="flex flex-col justify-center items-center gap-y-3 relative  hover:opacity-100">
                   <img
                     src={escape.img[0]}
                     alt=""

@@ -71,10 +71,23 @@ export default function Navbar() {
               <FaRegCircleUser />
             </button>
             {dropdownOpen && (
-              <div className="absolute right-0 mt-6 w-40 bg-[#0C1135] border border-[#b49e09] shadow-lg rounded z-10 text-center ">
-                <Link href="/login" className={`block px-4 py-2 text-sm hover:bg-gray-100 text-[#b49e09] ${CinzelFont.className}`}>Login</Link>
-                <Link href="/Signup" className={`block px-4 py-2 text-sm hover:bg-gray-100 text-[#b49e09] ${CinzelFont.className}`}>Signup</Link>
-              </div>
+                <div className="absolute right-0 mt-6 w-40 bg-[#0C1135] border border-[#b49e09] shadow-lg rounded z-10 text-center">
+    <Link
+      href="/login"
+      onClick={() => setDropdownOpen(false)}
+      className={`block px-4 py-2 text-sm hover:bg-gray-100 text-[#b49e09] ${CinzelFont.className}`}
+    >
+      Login
+    </Link>
+
+    <Link
+      href="/Signup"
+      onClick={() => setDropdownOpen(false)}
+      className={`block px-4 py-2 text-sm hover:bg-gray-100 text-[#b49e09] ${CinzelFont.className}`}
+    >
+      Signup
+    </Link>
+  </div>
             )}
           </div>
         </div>
