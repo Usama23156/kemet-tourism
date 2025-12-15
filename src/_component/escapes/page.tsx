@@ -104,7 +104,9 @@ function Page() {
                       className={`text-3xl pb-0 text-[#b49e09] bg-blue-950 px-2 mb-2 opacity-70 w-fit rounded-xl border-1 ${AlluraFont.className}`}
                     >
                       {escape.name}
+                      
                     </h4>
+                    {/* <svg className="nectar-scribble circle w-52" viewBox="0 0 800 350" preserveAspectRatio="none"><path  transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)" stroke-linejoin="miter" fill-opacity="0" pathLength="1" stroke-miterlimit="4" stroke="#b49e09" stroke-opacity="1" stroke-width="8" d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"></path></svg> */}
                     <p className={`text-2xl pb-9 ${LatoFont.className}`}>
                       {escape.discrption}
                     </p>
@@ -150,7 +152,7 @@ function Page() {
             spaceBetween: 0,
           },
         }}
-        style={{ backgroundImage: `url(/our-client.jpg)`}}
+        style={{ backgroundImage: `url(/our-client.JPG)`}}
         className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6  bg-no-repeat bg-cover bg-fixed bg-center bg-blue-500 rounded-3xl
   [mask-image:linear-gradient(to_left,blue_80%,transparent)]"
       >
