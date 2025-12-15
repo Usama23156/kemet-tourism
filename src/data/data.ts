@@ -263,7 +263,7 @@ export const escapesData = [
         id:1, 
         name:"Nile Escapes",
         discrption:"A timeless journey through the heart of Egypt — the River Nile.",
-        img:"/IMG_6812.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"Dahabiya Serenity Journey ",
@@ -279,7 +279,7 @@ export const escapesData = [
         id:2, 
         name:"Historical Escapes",
         discrption:"Follow the footsteps of the pharaohs and uncover the essence of ancient Egypt.",
-        img:"/Kemet-tales2.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"KEMET Tales  ",
@@ -300,7 +300,7 @@ export const escapesData = [
         id:3, 
         name:"Tranquility Escapes",
         discrption:"Peaceful retreats designed for rest, renewal, and mindfulness.",
-        img:"/R&R-Escapes3.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"R & R Escape (Rest & Reconnect) ",
@@ -321,7 +321,7 @@ export const escapesData = [
         id:4, 
         name:"Adventure Escapes",
         discrption:"For travelers who crave movement, thrill, and the unknown.",
-        img:"/Soul-of-Egypt.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"Desert Odyssey",
@@ -342,7 +342,7 @@ export const escapesData = [
         id:5, 
         name:"Authenticity Escapes",
         discrption:"Experiences designed to reveal Egypt’s living culture — its people, crafts, cuisine, and everyday life.",
-        img:"/Tranquility.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"Authenticity Journey ",
@@ -384,7 +384,7 @@ export const escapesData = [
         id:7, 
         name:"Customized Private Escapes",
         discrption:"Tailor-made itineraries for travelers who wish to design their own journey.",
-        img:"/IMG_6812.jpg",
+        img:"/IMG_6455.jpg",
         packages:[ {
             id:1,
             name:"Signature Private Escape ",
