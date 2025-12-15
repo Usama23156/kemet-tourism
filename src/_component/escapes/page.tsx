@@ -99,7 +99,7 @@ function Page() {
                     alt={escape.name}
                     className="rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_bottom,blue_50%,transparent)] md:[mask-image:linear-gradient(to_right,blue_50%,transparent)] "
                   />
-                  <div className=" absolute md:static top-60 md:top-0 z-10 ">
+                  <div className=" absolute md:static top-24 md:top-0 z-10 ">
                     <h4
                       className={`text-3xl pb-0 text-[#b49e09] bg-blue-950 px-2 mb-2 opacity-70 w-fit rounded-xl border-1 ${AlluraFont.className}`}
                     >
