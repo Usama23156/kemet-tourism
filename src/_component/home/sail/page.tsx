@@ -17,7 +17,7 @@ function page() {
         <img  data-aos="fade-right" src="/Sail-into-1.1.png" alt="" className='lg:max-w-xl md:max-w-lg max-w-80'/>
         <img  data-aos="fade-right" src="/Sail-into-1.2.png" alt="" className='lg:max-w-xl md:max-w-lg max-w-80'/>
       </div>
-        <div className='flex justify-center items-center  '>
+        <div className='flex justify-center items-center'>
         {/* <img data-aos="fade-up" src="/last-round-trip-3.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute '/>
         <img data-aos="fade-right" src="/last-round-trip-4.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute'/>
         <img data-aos="fade-up" src="/last-Round-Trip-2.png" alt="" className='lg:max-w-2xl md:max-w-lg absolute min-w-56 '/> */}
