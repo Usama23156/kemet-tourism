@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "@app/globals.css";
+import "@/app/globals.css";
 
 const AlluraFont = Allura({
   subsets: ["latin"],
