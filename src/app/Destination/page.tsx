@@ -42,7 +42,7 @@ const page = () => {
             data-aos="fade-up"
             src="/map-destination.png"
             alt=""
-            className="lg:max-w-3xl md:max-w-lg max-w-96"
+            className="lg:max-w-3xl md:max-w-lg max-w-full"
           />
           <Link
             href={`/Destination/DestinationDetails?id=${destination[0].id}`}

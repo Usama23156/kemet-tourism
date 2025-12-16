@@ -27,3 +27,30 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;  */
 }
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0, 900; /* Adjust based on path length */
+    }
+    to {
+        stroke-dasharray: 900, 0; /* Adjust based on path length */
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-path {
+    animation: draw 2s ease forwards, rotate 2s linear infinite; /* Combine animations */
+    stroke-dasharray: 900; /* Same as path length */
+    stroke-dashoffset: 0; /* Start from no offset */
+}
+.animate-path.done {
+    stroke-dashoffset: 0; /* Normal visibility */
+}

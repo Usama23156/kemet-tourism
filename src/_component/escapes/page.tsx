@@ -10,6 +10,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "../../app/globals.css";
 
 const AlluraFont = Allura({
   subsets: ["latin"],
@@ -42,11 +44,28 @@ function Page() {
       <div className="flex justify-center items-center pt-6 gap-x-3 relative">
         <h3
           data-aos="fade-right"
-          className={`pt-9 text-xl md:text-4xl lg:text-5xl z-40 ${CinzelFont.className}`}
+          className={`pt-9 text-3xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}
         >
           Escape the Ordinary
         </h3>
-         <svg className=" absolute lg:right-80 nectar-scribble circle lg:w-80 w-28 right-28 top-10 lg:top-0" viewBox="0 0 800 350" preserveAspectRatio="none"><path  transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)" stroke-linejoin="miter" fill-opacity="0" pathLength="1" stroke-miterlimit="4" stroke="#b49e09" stroke-opacity="1" stroke-width="8" d=" M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"></path></svg>
+         <svg
+                className="absolute lg:right-80 nectar-scribble circle md:w-80 w-44 right-5 top-11 md:top-0"
+                viewBox="0 0 800 350"
+                preserveAspectRatio="none"
+            >
+                <path
+                    className="animate-path.done" // Add animation class here
+                    transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)"
+                    strokeLinejoin="miter"
+                    fillOpacity="0"
+                    pathLength="1"
+                    strokeMiterlimit="4"
+                    stroke="#b49e09"
+                    strokeOpacity="1"
+                    strokeWidth="8"
+                    d="M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"
+                />
+            </svg>
       </div>
       <div>
         {escapesData.map((escape, index) => (
@@ -147,15 +166,14 @@ function Page() {
           },
         }}
         style={{ backgroundImage: `url(/our-client.JPG)`}}
-        className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6  bg-no-repeat bg-cover bg-fixed bg-center bg-blue-500 rounded-3xl
-  [mask-image:linear-gradient(to_left,blue_80%,transparent)]"
+        className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6  bg-no-repeat bg-cover  bg-center rounded-3xl "
       >
         {Escapes.map((escape) => (
           <SwiperSlide key={escape.id}>
-            <div className="flex justify-center items-center w-full h-full p-4">
+            <div className="flex justify-center items-center w-full h-full py-4 md:px-2 ">
               <div
                 data-aos="fade-right"
-                className="flex flex-col justify-center items-center gap-y-6 border-1 border-[#b49e09] w-[80%] md:w-full rounded-3xl pb-3 hover:scale-105 transition-all duration-300 overflow-hidden"
+                className="flex flex-col justify-center items-center gap-y-6 border-1 border-[#b49e09] w-[90%] md:w-full rounded-3xl pb-3 hover:scale-105 transition-all duration-300 overflow-hidden"
               >
                 <div className="flex flex-col justify-center items-center gap-y-3 relative  hover:opacity-100">
                   <img
@@ -182,7 +200,7 @@ function Page() {
                 ))}
                 <Link href={`/Escapes/EscapesDetails?id=${escape.id}`}>
                   <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
-                    BOOK NOW
+                    VIEW DETAILS
                   </button>
                 </Link>
               </div>

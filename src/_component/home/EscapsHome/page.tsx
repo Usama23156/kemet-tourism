@@ -40,7 +40,7 @@ function page() {
                 ))}
                 <Link href={`/Escapes/EscapesDetails?id=${escape.id}`}>
                 <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
-                BOOK NOW    
+                VIEW DETAILS   
             </button>
                 </Link>
             </div>
