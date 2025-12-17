@@ -59,7 +59,7 @@ function page() {
                   <img loading="lazy" src="/welcome.jpg" alt="" />
                 </div>
                 <div className="  flex items-center justify-center pt-[40px] lg:px-7 lg:max-w-[55%] ">
-                <p className="font-bold text-xl leading-[24px] tracking-[0%] align-middle ">
+                <p className="font-bold text-lg leading-[24px] tracking-[0%] align-middle ">
                  Our team consists of experienced professionals with a profound
                   understanding of Egypt’s history, culture, and natural beauty.
                   We offer a range of travel experiences, from iconic landmarks
