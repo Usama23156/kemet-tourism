@@ -1,12 +1,17 @@
+// "use client";
 import React from "react";
-import NextTrip from "../../_component/home/nextTrip/page";
-import FooterHome from "@/_component/home/FooterHome/page";
 
 function page() {
+
+  //   useEffect(() => {
+  //   if (window.instgrm) {
+  //     window.instgrm.Embeds.process();
+  //   }
+  // }, []);
   return (
     <>
-      <div className="bg-fixed bg-no-repeat bg-cover bg-center pt-20">
-        <div className="About-Us pt-8 pb-10 top-[89px] ">
+      <div className="bg-fixed bg-no-repeat bg-cover bg-center">
+        <div className="About-Us  pb-10 top-[89px] ">
           <div className="Main top-[257.5px] gap-[55px]">
             <div className="Header flex flex-col relative">
               <div className="bg-neutral-900">
@@ -54,12 +59,18 @@ function page() {
                   forever.
                 </p>
               </div>
-              <div className=" lg:flex ">
+              <div className=" lg:flex lg:text-center lg:items-center lg:justify-center lg:gap-10 lg:pt-10 lg:flex-row flex flex-col">
                 <div className=" pt-[40px] lg:max-w-[45%] ">
+                    {/* <blockquote
+        className="instagram-media w-full"
+        data-instgrm-permalink="https://www.instagram.com/p/C_0roUSI1gb/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="14"
+      ></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script> */}
                   <img loading="lazy" src="/welcome.jpg" alt="" />
                 </div>
-                <div className="  flex items-center justify-center pt-[40px] lg:px-7 lg:max-w-[55%] ">
-                <p className="font-bold text-lg leading-[24px] tracking-[0%] align-middle ">
+                <div className="  flex items-center justify-center pt-[40px] lg:px-7 lg:max-w-[55%] border-1 border-[#b49e09] mt-7 rounded-2xl">
+                <p className="font-bold text-lg leading-[24px] tracking-[0%] align-middle px-5 pb-5">
                  Our team consists of experienced professionals with a profound
                   understanding of Egypt’s history, culture, and natural beauty.
                   We offer a range of travel experiences, from iconic landmarks
