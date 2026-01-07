@@ -263,7 +263,7 @@ export const escapesData = [
         id:1, 
         name:"Nile Escapes",
         discrption:"A timeless journey through the heart of Egypt — the River Nile.",
-        img:"/IMG_6455.jpg",
+        img:"/nile.jpeg",
         packages:[ {
             id:1,
             name:"Dahabiya Serenity Journey ",

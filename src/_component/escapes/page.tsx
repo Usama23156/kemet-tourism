@@ -79,14 +79,14 @@ function Page() {
           >
             {index % 2 === 0 ? (
               <>
-                <div className="relative md:flex md:justify-start pt-8 pb-8">
+                <div className="relative md:flex md:justify-start gap-x-10 pt-8 pb-8">
                   <div className="absolute md:static z-10 top-14 left-1 md:left-0 w-full h-full">
                     <h4
                       className={`text-3xl pb-0 text-[#b49e09] ${AlluraFont.className}`}
                     >
                       {escape.name}
                     </h4>
-                    <p className={`text-2xl pb-9 ${LatoFont.className}`}>
+                    <p className={`text-lg pb-9 ${LatoFont.className}`}>
                       {escape.discrption}
                     </p>
                     <div>
@@ -105,7 +105,7 @@ function Page() {
                   <img
                     src={escape.img}
                     alt={escape.name}
-                    className="rounded-2xl md:w-56 w-full [mask-image:linear-gradient(to_top,blue_50%,transparent)] md:[mask-image:linear-gradient(to_left,blue_50%,transparent)] "
+                    className="rounded-2xl md:h-96 w-full [mask-image:linear-gradient(to_top,blue_50%,transparent)] md:[mask-image:linear-gradient(to_left,blue_50%,transparent)] "
                   />
                 </div>
               </>
