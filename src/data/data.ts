@@ -279,7 +279,7 @@ export const escapesData = [
         id:2, 
         name:"Historical Escapes",
         discrption:"Follow the footsteps of the pharaohs and uncover the essence of ancient Egypt.",
-        img:"/IMG_6455.jpg",
+        img:"/02.png",
         packages:[ {
             id:1,
             name:"KEMET Tales  ",
@@ -300,7 +300,7 @@ export const escapesData = [
         id:3, 
         name:"Tranquility Escapes",
         discrption:"Peaceful retreats designed for rest, renewal, and mindfulness.",
-        img:"/IMG_6455.jpg",
+        img:"/3.png",
         packages:[ {
             id:1,
             name:"R & R Escape (Rest & Reconnect) ",
