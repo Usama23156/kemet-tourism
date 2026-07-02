@@ -1,88 +1,122 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import { useMemo } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { OurEscapes } from "@/data/data"; // Assuming this exports your escape data
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { Cinzel } from "next/font/google";
+import { useAos } from "@/lib/useAos";
+import { OurEscapes } from "@/data/data";
+import EscapeGallery from "@/_component/escapes/EscapeGallery";
+import GlassCard from "@/_component/ui/GlassCard";
+import Button from "@/_component/ui/Button";
 
-const Page: React.FC = () => {
+const CinzelFont = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
+
+export default function EscapesDetailsPage() {
+  useAos();
   const searchParams = useSearchParams();
-  const id = searchParams.get("id") || "No ID";
-  const [escapeData, setEscapeData] = useState({
-    id: 0,
-    img: [],
-    name: "",
-    price: "",
-    features: [],
-    discrption: "",
-  });
-  const [loading, setLoading] = useState(true);
+  const id = searchParams.get("id");
 
-  useEffect(() => {
-    const data = OurEscapes.find((escape) => escape.id === parseInt(id));
-    if (data) {
-      setEscapeData(data as any);
-    }
-    setLoading(false);
+  const escapeData = useMemo(() => {
+    if (!id) return null;
+    return OurEscapes.find((escape) => escape.id === parseInt(id, 10)) ?? null;
   }, [id]);
 
+  if (!id || !escapeData) {
+    return (
+      <main className="mesh-bg flex min-h-[60vh] flex-col items-center justify-center gap-4 px-4 pt-28">
+        <GlassCard padding="lg" className="text-center">
+          <p className="mb-4 text-kemet-muted">
+            {!id ? "No escape selected." : "Escape not found."}
+          </p>
+          <Button href="/Escapes" variant="outline">
+            Browse all escapes
+          </Button>
+        </GlassCard>
+      </main>
+    );
+  }
+
   return (
-    <>
-      <div className="md:flex gap-20 px-[1.5rem] py-[4.5rem] justify-center items-center mt-10">
-        {loading ? (
-          <div className="h-[100vh] flex items-center justify-center">
-            <p className="m-auto h-[100vh]">Loading...</p>
+    <main className="mesh-bg overflow-x-hidden px-4 pb-16 pt-24 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-10 lg:flex-row lg:gap-16">
+        <section
+          className="w-full lg:w-1/2"
+          aria-labelledby="escape-title"
+        >
+          <div data-aos="fade-up">
+            <EscapeGallery images={escapeData.img} name={escapeData.name} />
           </div>
-        ) : (
-          <div className="flex flex-col md:flex-row justify-center lg:items-center gap-12 lg:gap-24 lg:p-12 mt-12">
-            <div className="flex flex-col justify-center gap-6">
-              <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={10}
-                slidesPerView={1} // Default to 1 slide on small screens
-                navigation
-                pagination={{ clickable: true }}
-                autoplay={{
-                  delay: 5000,
-                  disableOnInteraction: false,
-                }}
-                data-aos="fade-up"
-                className="hero-swiper text-center max-w-80 lg:max-w-2xl "
-              >
-                {escapeData.img.map((image, index) => (
-                  <SwiperSlide key={index}>
-                    <img
-                      src={image}
-                      alt={`Escape image ${index + 1}`}
-                      className="rounded-2xl"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <h2 className="text-4xl font-bold mb-6 text-center">{escapeData.name}</h2>
+          <h1
+            id="escape-title"
+            data-aos="fade-up"
+            className={`mt-6 text-center text-3xl font-bold sm:text-4xl lg:text-left ${CinzelFont.className}`}
+          >
+            {escapeData.name}
+          </h1>
+        </section>
+
+        <section className="w-full lg:w-1/2" aria-labelledby="escape-details">
+          <GlassCard padding="lg" className="flex flex-col gap-6">
+            <div data-aos="fade-up">
+              <p className="text-sm uppercase tracking-widest text-kemet-gold">
+                Starting from
+              </p>
+              <p className="text-2xl font-bold text-white sm:text-3xl">
+                {escapeData.price}
+              </p>
             </div>
-            <div className="max-w-lg px-6">
-              <h3 className="text-2xl font-bold mb-6">Price: {escapeData.price}</h3>
-              <ul className=" mb-6 grid grid-cols-2">
-                {escapeData.features.map((feature, index) => (
-                  <li key={index} className="mb-2 text-sm ">{feature}</li>
+
+            <div data-aos="fade-up">
+              <h2
+                id="escape-details"
+                className="mb-4 text-lg font-semibold text-white"
+              >
+                What&apos;s included
+              </h2>
+              <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {escapeData.features.map((feature) => (
+                  <li
+                    key={feature}
+                    className="flex items-start gap-2 rounded-lg border border-white/8 bg-white/5 p-3 text-sm text-kemet-muted"
+                  >
+                    <span
+                      className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-kemet-gold"
+                      aria-hidden
+                    />
+                    {feature}
+                  </li>
                 ))}
               </ul>
-              <p className="mb-6">{escapeData.discrption}</p>
-              <div className="flex justify-center items-center">
-                <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
-                  BOOK NOW
-                </button>
-              </div>
             </div>
-          </div>
-        )}
-      </div>
-    </>
-  );
-};
 
-export default Page;
+            <p
+              data-aos="fade-up"
+              className="text-sm leading-relaxed text-kemet-muted sm:text-base"
+            >
+              {escapeData.discrption}
+            </p>
+
+            <div
+              data-aos="fade-up"
+              className="flex flex-col gap-3 sm:flex-row sm:items-center"
+            >
+              <Button variant="secondary" size="lg">
+                Book Now
+              </Button>
+              <Link
+                href="/Escapes"
+                className="text-center text-sm text-kemet-gold underline underline-offset-4 hover:opacity-80"
+              >
+                Back to all escapes
+              </Link>
+            </div>
+          </GlassCard>
+        </section>
+      </div>
+    </main>
+  );
+}

@@ -1,44 +1,71 @@
-import React from "react";
-import { Cinzel } from 'next/font/google'
 import Image from "next/image";
+import { Cinzel } from "next/font/google";
+import Button from "@/_component/ui/Button";
+import SectionHeading from "@/_component/ui/SectionHeading";
+import GlassCard from "@/_component/ui/GlassCard";
 
+const CinzelFont = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
 
- const CinzelFont = Cinzel({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-bokor',
-})
-
-const page = () => {
-
+export default function Welcome() {
   return (
-    <>
-    <div style={{ backgroundImage: `url(/bg.png)` }}
-            className=" bg-no-repeat bg-cover bg-center pt-28 md:pb-36 pb-28">
-      <div className="md:flex justify-center items-center px-6 lg:px-32 gap-10 py-6 ">
-        <div className="md:w-[47%] md:pt-12 items-center lg:items-start lg:gap-y-0 gap-y-8 flex flex-col">
-          <h2 data-aos="fade-up" className={`font-semibold lg:text-4xl text-3xl ${CinzelFont.className}`}> Travel made easy </h2>
-          <p data-aos="fade-up" className="text-white mt-6 lg:text-xl text-lg">
-            Born from the heart of Egypt, Kemet Escapes designs journeys with
-            soul. We are local experts who live the land we share — its rhythms,
-            its secrets, its spirit.
-          </p>
-          <div data-aos="fade-up" className="flex items-center  gap-6 mb-6 lg:mt-32">
-            <button className="bg-[#b49e09] text-white rounded-4xl border-[#a8870a] border-4 hover:border-4 hover:border-white transition-colors duration-300 text-base lg:text-xl px-3 py-1.5 cursor-pointer">
-                LATEST PROMOS     
-            </button>
-            <button className="text-[#b49e09] bg-white px-3 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-base lg:text-xl cursor-pointer">
-                OUR OFFERINGS    
-            </button>
+    <section className="mesh-bg section-padding">
+      <div className="section-container">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+          <div className="flex flex-1 flex-col gap-6">
+            <SectionHeading
+              eyebrow="Who we are"
+              title="Travel made easy"
+              align="left"
+              titleAs="h2"
+            />
+            <p
+              data-aos="fade-up"
+              className="text-base leading-relaxed text-kemet-muted lg:text-lg"
+            >
+              Born from the heart of Egypt, Kemet Escapes designs journeys with
+              soul. We are local experts who live the land we share — its
+              rhythms, its secrets, its spirit.
+            </p>
+            <div
+              data-aos="fade-up"
+              className="flex flex-wrap gap-4 pt-2"
+            >
+              <Button variant="primary" size="md">
+                Latest Promos
+              </Button>
+              <Button href="/Escapes" variant="secondary" size="md">
+                Our Offerings
+              </Button>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" className="relative w-full flex-1">
+            <GlassCard hover padding="sm" className="overflow-hidden">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/welcome.jpg"
+                  alt="Travellers enjoying an Egyptian landscape"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            </GlassCard>
+            <div
+              className={`glass-panel absolute -bottom-4 -left-4 rounded-xl px-5 py-3 shadow-gold ${CinzelFont.className}`}
+              aria-hidden
+            >
+              <p className="text-xs uppercase tracking-widest text-kemet-gold">
+                Since
+              </p>
+              <p className="text-2xl font-semibold text-white">Kemet</p>
+            </div>
           </div>
         </div>
-        <div data-aos="fade-left" className="md:w-[38%]">
-            <img src="/welcome.jpg" alt="" className="min-w-20 rounded-4xl " />
-        </div>
       </div>
-      </div>
-    </>
+    </section>
   );
 }
-
-export default page;

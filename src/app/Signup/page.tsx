@@ -1,116 +1,81 @@
-import React from 'react'
+"use client";
 
-function page() {
-    return (
-        <>
+import Link from "next/link";
+import { useAos } from "@/lib/useAos";
+import GlassCard from "@/_component/ui/GlassCard";
+import Button from "@/_component/ui/Button";
 
-            <div className="min-h-screen flex items-center justify-center pt-30 pb-20">
-                <div data-aos="fade-right" className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/10">
+export default function SignupPage() {
+  useAos();
 
-                    {/* Title */}
-                    <h1 className="text-3xl font-bold text-center text-white mb-6">
-                        Create Account
-                    </h1>
-                    <p className="text-center text-gray-400 mb-8">
-                        Join Us And Start Your Escape
-                    </p>
+  return (
+    <main className="mesh-bg flex min-h-[80vh] items-center justify-center px-4 py-28">
+      <GlassCard padding="lg" className="w-full max-w-md">
+        <div data-aos="fade-up">
+          <h1 className="mb-2 text-center text-3xl font-bold text-white">
+            Create Account
+          </h1>
+          <p className="mb-8 text-center text-sm text-kemet-muted">
+            Join us and start your escape
+          </p>
 
-                    {/* Form */}
-                    <form className="space-y-6">
-
-                        {/* Name */}
-                        <div>
-                            <label className="block text-sm text-gray-300 mb-2">
-                                Full Name
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="John Doe"
-                                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
-                            />
-                        </div>
-
-                        {/* Email */}
-                        <div>
-                            <label className="block text-sm text-gray-300 mb-2">
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                placeholder="you@example.com"
-                                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
-                            />
-                        </div>
-
-                        {/* Password */}
-                        <div>
-                            <label className="block text-sm text-gray-300 mb-2">
-                                Password
-                            </label>
-                            <input
-                                type="password"
-                                placeholder="••••••••"
-                                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
-                            />
-                        </div>
-
-                        {/* Confirm Password */}
-                        <div>
-                            <label className="block text-sm text-gray-300 mb-2">
-                                Confirm Password
-                            </label>
-                            <input
-                                type="password"
-                                placeholder="••••••••"
-                                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
-                            />
-                        </div>
-
-                        {/* Terms */}
-                        <div className="flex items-center gap-2 text-sm text-gray-400">
-                            <input type="checkbox" className="accent-[#0C1135]" />
-                            <span>
-                                I agree to the{" "}
-                                <a href="#" className="text-white hover:underline">
-                                    Terms & Conditions
-                                </a>
-                            </span>
-                        </div>
-
-                        {/* Button */}
-                        <button
-                            type="submit"
-                            className="w-full py-3 rounded-lg bg-[#0C1135] text-white font-semibold hover:bg-[#141a5a] transition"
-                        >
-                            Sign Up
-                        </button>
-                    </form>
-
-                    {/* Login link */}
-                    <p className="text-center text-gray-400 text-sm mt-8">
-                        Already have an account?{" "}
-                        <a href="/login" className="text-white hover:underline">
-                            Sign in
-                        </a>
-                    </p>
-
-                </div>
+          <form className="space-y-5">
+            <div>
+              <label className="mb-2 block text-sm text-kemet-muted">
+                Full Name
+              </label>
+              <input type="text" placeholder="John Doe" className="input-modern" />
             </div>
+            <div>
+              <label className="mb-2 block text-sm text-kemet-muted">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                className="input-modern"
+              />
+            </div>
+            <div>
+              <label className="mb-2 block text-sm text-kemet-muted">
+                Password
+              </label>
+              <input
+                type="password"
+                placeholder="••••••••"
+                className="input-modern"
+              />
+            </div>
+            <div>
+              <label className="mb-2 block text-sm text-kemet-muted">
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                placeholder="••••••••"
+                className="input-modern"
+              />
+            </div>
+            <div className="flex items-center gap-2 text-sm text-kemet-muted">
+              <input type="checkbox" className="accent-kemet-gold" />
+              <span>
+                I agree to the{" "}
+                <a href="#" className="text-kemet-gold hover:underline">
+                  Terms &amp; Conditions
+                </a>
+              </span>
+            </div>
+            <Button type="submit" variant="primary" className="w-full">
+              Sign Up
+            </Button>
+          </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        </>
-    )
+          <p className="mt-8 text-center text-sm text-kemet-muted">
+            Already have an account?{" "}
+            <Link href="/login" className="text-kemet-gold hover:underline">
+              Sign in
+            </Link>
+          </p>
+        </div>
+      </GlassCard>
+    </main>
+  );
 }
-
-export default page

@@ -4,6 +4,8 @@ import { OurDestination } from "@/data/data";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useAos } from "@/lib/useAos";
+import SectionHeading from "@/_component/ui/SectionHeading";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -27,16 +29,18 @@ const CinzelFont = Cinzel({
   variable: "--font-bokor",
 });
 
-const page = () => {
+const DestinationPage = () => {
+  useAos();
+
   return (
-    <>
-      <div className="flex justify-center items-center flex-col pt-28 gap-y-8  ">
-        <p
-          data-aos="fade-up"
-          className={`lg:text-4xl sm:text-2xl md:text-4xl text-xl max-w-3xl text-center uppercase font-extrabold px-3 ${CinzelFont.className}`}
-        >
-          The Nile carries more than water; it carries Egypt’s soul.
-        </p>
+    <main className="mesh-bg flex flex-col items-center gap-y-8 overflow-x-hidden pb-12 pt-24">
+      <div className="section-container">
+        <SectionHeading
+          eyebrow="Explore Egypt"
+          title="The Nile carries more than water; it carries Egypt's soul."
+          className="max-w-3xl"
+        />
+      </div>
         <div className="relative " >
           <img
             data-aos="fade-up"
@@ -219,7 +223,7 @@ const page = () => {
               spaceBetween: 0,
             },
           }}
-          className="flex justify-center items-center w-full lg:w-full md:max-w-5xl mb-6"
+          className="destination-swiper section-container mb-6 w-full"
         >
           {destination.map((dest) => (
             <SwiperSlide key={dest.id}>
@@ -252,9 +256,8 @@ const page = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </>
+    </main>
   );
 };
 
-export default page;
+export default DestinationPage;

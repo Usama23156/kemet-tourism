@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kemet Tours",
-  description: "kemet website for tours",
+  title: "Kemet Escapes | Luxury Egypt Tours & Tailor-Made Travel",
+  description:
+    "Discover authentic Egypt with Kemet Escapes — luxury Nile journeys, historical escapes, and tailor-made travel experiences.",
 };
 
 export default function RootLayout({
@@ -28,13 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
-        >
-          <Suspense>
-        <Navbar/>
-        {children}
-        <Footer/>
-          </Suspense>
+        className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col antialiased overflow-x-hidden text-foreground`}
+      >
+        <Suspense>
+          <Navbar />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
