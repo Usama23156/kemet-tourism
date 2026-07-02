@@ -1,14 +1,9 @@
-import React from 'react'
-import Escapes from '../../_component/escapes/page'
-const page = () => {
-  
-  return (
-    <>
-    <div className="bg-fixed bg-no-repeat bg-cover bg-center pt-20">
-    <Escapes/>
-    </div>
-    </>
-  )
-}
+import EscapesPageContent from "@/_component/escapes/page";
 
-export default page
+export default function EscapesPage() {
+  return (
+    <div className="bg-cover bg-center bg-no-repeat pt-20">
+      <EscapesPageContent />
+    </div>
+  );
+}

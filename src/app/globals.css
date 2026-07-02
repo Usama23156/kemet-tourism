@@ -54,3 +54,33 @@ body {
 .animate-path.done {
     stroke-dashoffset: 0; /* Normal visibility */
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-path {
+    animation: none !important;
+  }
+}
+
+.escapes-swiper .swiper-slide,
+.escape-details-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.escapes-swiper .swiper-wrapper {
+  align-items: stretch;
+}
