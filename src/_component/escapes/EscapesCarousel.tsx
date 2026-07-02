@@ -3,19 +3,14 @@
 import { memo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Cinzel } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { OurEscapes } from "@/data/data";
+import GlassCard from "@/_component/ui/GlassCard";
 import { normalizeImageSrc, type EscapeItem } from "./types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const CinzelFont = Cinzel({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const escapes: EscapeItem[] = OurEscapes;
 
@@ -23,50 +18,51 @@ const EscapeCard = memo(function EscapeCard({ escape }: { escape: EscapeItem }) 
   const coverImage = normalizeImageSrc(escape.img[0] ?? "");
 
   return (
-    <div
-      data-aos="fade-right"
-      className="flex h-full flex-col items-center justify-between gap-y-4 overflow-hidden rounded-3xl border border-[#b49e09] pb-3 motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:scale-105"
+    <GlassCard
+      hover
+      padding="sm"
+      className="flex h-full flex-col overflow-hidden"
     >
-      <div className="relative flex w-full flex-1 flex-col items-center opacity-90 hover:opacity-100">
-        <Image
-          src={coverImage}
-          alt={escape.name}
-          width={384}
-          height={320}
-          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 256px"
-          className="w-full max-w-96 rounded-2xl rounded-b-none object-cover md:max-w-80 lg:max-w-64"
-        />
-        <div className="absolute bottom-0 left-0 flex w-full flex-col gap-y-1 px-4 py-3 sm:left-6">
-          <h3 className="text-base font-bold sm:text-lg md:text-xl">
-            {escape.name}
-          </h3>
-          <p className="text-sm font-bold text-[#b49e09] sm:text-base">
-            {escape.price}
-          </p>
+      <div data-aos="fade-right" className="flex h-full flex-col">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+          <Image
+            src={coverImage}
+            alt={escape.name}
+            fill
+            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 256px"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-kemet-navy/90 via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full p-4">
+            <h3 className="text-base font-bold text-white sm:text-lg">
+              {escape.name}
+            </h3>
+            <p className="text-sm font-semibold text-kemet-gold">{escape.price}</p>
+          </div>
         </div>
+
+        <ul
+          className="mt-3 hidden flex-col gap-1 lg:flex"
+          aria-label={`${escape.name} features`}
+        >
+          {escape.features.map((feature) => (
+            <li key={feature} className="text-xs text-kemet-muted">
+              • {feature}
+            </li>
+          ))}
+        </ul>
+
+        <Link
+          href={`/Escapes/EscapesDetails?id=${escape.id}`}
+          className="mt-4 block"
+          aria-label={`View details for ${escape.name}`}
+        >
+          <span className="flex w-full items-center justify-center rounded-full border-2 border-white bg-white py-2 text-sm font-semibold text-kemet-gold transition-colors hover:border-kemet-gold">
+            VIEW DETAILS
+          </span>
+        </Link>
       </div>
-
-      <ul
-        className={`hidden w-full flex-col gap-1 px-4 text-center lg:flex ${CinzelFont.className}`}
-        aria-label={`${escape.name} features`}
-      >
-        {escape.features.map((feature) => (
-          <li key={feature} className="text-xs font-bold leading-tight">
-            {feature}
-          </li>
-        ))}
-      </ul>
-
-      <Link
-        href={`/Escapes/EscapesDetails?id=${escape.id}`}
-        className="mt-auto shrink-0"
-        aria-label={`View details for ${escape.name}`}
-      >
-        <span className="inline-block cursor-pointer rounded-4xl border-4 border-white bg-white px-10 py-1.5 text-base text-[#b49e09] transition-colors duration-300 hover:border-[#a8870a] sm:px-12 sm:text-lg md:px-10 md:text-xl">
-          VIEW DETAILS
-        </span>
-      </Link>
-    </div>
+    </GlassCard>
   );
 });
 
@@ -77,7 +73,7 @@ export default function EscapesCarousel() {
       aria-labelledby="escapes-carousel-heading"
     >
       <div
-        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-30"
+        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-20"
         style={{ backgroundImage: "url(/our-client.JPG)" }}
         aria-hidden
       />
@@ -87,7 +83,7 @@ export default function EscapesCarousel() {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={10}
+        spaceBetween={16}
         slidesPerView={1}
         loop
         navigation
@@ -97,13 +93,8 @@ export default function EscapesCarousel() {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          868: {
-            slidesPerView: 4,
-          },
+          640: { slidesPerView: 3, spaceBetween: 12 },
+          868: { slidesPerView: 4, spaceBetween: 16 },
         }}
         className="escapes-swiper mb-6 w-full py-4"
       >

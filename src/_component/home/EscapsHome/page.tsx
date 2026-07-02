@@ -1,54 +1,85 @@
-import React from "react";
+import Image from "next/image";
 import { OurEscapes } from "@/data/data";
-import Link from "next/link";
+import SectionHeading from "@/_component/ui/SectionHeading";
+import GlassCard from "@/_component/ui/GlassCard";
+import Button from "@/_component/ui/Button";
+import { normalizeImageSrc } from "@/_component/escapes/types";
 
-const Escapes: {
-  id: number;
-  img: string[];
-  name: string;
-  price: string;
-  features: string[];
-  discrption: string;
-}[] = OurEscapes;
-
-function page() {
+export default function EscapsHome() {
   return (
-    <>
-      <div className="flex flex-col justify-center items-center gap-y-6 pt-12 ">
-        <h4 data-aos="fade-up" className="md:text-4xl text-2xl">Discover Egypt like never before ...</h4>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-12 p-6 lg:p-12">
-          {Escapes.map((escape) => (
-            <div  data-aos="fade-right"
+    <section className="section-padding">
+      <div className="section-container flex flex-col gap-10">
+        <SectionHeading
+          eyebrow="Curated journeys"
+          title="Discover Egypt like never before"
+          description="Handpicked escapes along the Nile and beyond — each designed for unforgettable moments."
+        />
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {OurEscapes.map((escape, index) => (
+            <GlassCard
               key={escape.id}
-              className="flex flex-col justify-center items-center gap-y-6 gap-x-6 border-1 border-[#b49e09] rounded-3xl pb-3  hover:scale-105 transition-all duration-300 overflow-hidden"
+              hover
+              padding="sm"
+              className="group flex flex-col overflow-hidden"
             >
-              <div className="flex flex-col justify-center items-center gap-y-3 gap-x-6 relative opacity-75 hover:opacity-100 hover:scale-105 transition-all duration-150">
-                <div>
-                <img
-                  src={escape.img[0]}
-                  alt=""
-                  className=" lg:max-w-64 md:max-w-80 rounded-2xl rounded-b-none max-w-96"
+              <div
+                data-aos="fade-up"
+                data-aos-delay={index * 80}
+                className="flex h-full flex-col"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                  <Image
+                    src={normalizeImageSrc(escape.img[0] ?? "")}
+                    alt={escape.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 motion-safe:group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-kemet-navy/90 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 w-full p-4">
+                    <h3 className="text-lg font-bold text-white sm:text-xl">
+                      {escape.name}
+                    </h3>
+                    <p className="text-sm font-semibold text-kemet-gold">
+                      {escape.price}
+                    </p>
                   </div>
-                <div className="max-w-md flex flex-col left-6 gap-y-3 absolute bottom-0 w-full py-3 ">
-                  <h3 className="md:text-sm text-2xl font-bold ">{escape.name}</h3>
-                  <p className="md:text-sm text-2xl font-bold">{escape.price}</p>
+                </div>
+
+                <ul className="mt-4 hidden flex-1 flex-col gap-1 lg:flex">
+                  {escape.features.slice(0, 3).map((feature) => (
+                    <li
+                      key={feature}
+                      className="flex items-center gap-2 text-xs text-kemet-muted"
+                    >
+                      <span className="h-1 w-1 rounded-full bg-kemet-gold" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-4">
+                  <Button
+                    href={`/Escapes/EscapesDetails?id=${escape.id}`}
+                    variant="secondary"
+                    size="sm"
+                    className="w-full"
+                  >
+                    View Details
+                  </Button>
                 </div>
               </div>
-              {escape.features.map((feature, index) => (
-                  <p key={index} className=" lg:text-sm text-2xl h-3 lg:h-0">{feature}</p>
-                ))}
-                <Link href={`/Escapes/EscapesDetails?id=${escape.id}`}>
-                <button className="text-[#b49e09] bg-white px-16 md:px-10 py-1.5 rounded-4xl border-white border-4 hover:border-4 hover:border-[#a8870a] transition-colors duration-300 text-xl cursor-pointer mt-3">
-                VIEW DETAILS   
-            </button>
-                </Link>
-            </div>
+            </GlassCard>
           ))}
         </div>
+
+        <div className="flex justify-center pt-4">
+          <Button href="/Escapes" variant="outline" size="lg">
+            View All Escapes
+          </Button>
+        </div>
       </div>
-    </>
+    </section>
   );
 }
-
-export default page;

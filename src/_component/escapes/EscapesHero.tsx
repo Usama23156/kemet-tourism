@@ -4,19 +4,19 @@ import { Cinzel } from "next/font/google";
 
 const CinzelFont = Cinzel({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "600"],
 });
 
 export default function EscapesHero() {
   return (
-    <header className="flex flex-wrap items-center justify-center gap-x-2 px-4 pt-6">
+    <header className="section-container flex flex-wrap items-center justify-center gap-x-2 pt-8">
       <h1
         data-aos="fade-right"
-        className={`flex flex-wrap items-center justify-center gap-x-2 pt-9 text-3xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}
+        className={`flex flex-wrap items-center justify-center gap-x-2 text-3xl md:text-4xl lg:text-5xl ${CinzelFont.className}`}
       >
         <span>Escape the</span>
         <span className="relative">
-          Ordinary
+          <span className="gold-gradient-text">Ordinary</span>
           <svg
             className="pointer-events-none absolute top-3 w-44 md:top-0 md:w-80"
             viewBox="0 0 800 350"

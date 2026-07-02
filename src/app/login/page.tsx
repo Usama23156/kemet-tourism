@@ -1,77 +1,65 @@
-import React from 'react'
+"use client";
 
-function page() {
+import Link from "next/link";
+import { useAos } from "@/lib/useAos";
+import GlassCard from "@/_component/ui/GlassCard";
+import Button from "@/_component/ui/Button";
+
+export default function LoginPage() {
+  useAos();
+
   return (
-    <>
-      <div className="min-h-screen flex items-center justify-center  pt-30 pb-20">
-        <div data-aos="fade-right" className="w-full max-w-md bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl p-8 border border-white/20">
-
-          {/* Title */}
-          <h1 className="text-3xl font-bold text-center text-white mb-6">
+    <main className="mesh-bg flex min-h-[80vh] items-center justify-center px-4 py-28">
+      <GlassCard padding="lg" className="w-full max-w-md">
+        <div data-aos="fade-up">
+          <h1 className="mb-2 text-center text-3xl font-bold text-white">
             Welcome Back
           </h1>
-          <p className="text-center text-gray-400 mb-8">
+          <p className="mb-8 text-center text-sm text-kemet-muted">
             Sign in to your account
           </p>
 
-          {/* Form */}
-          <form className="space-y-6">
-
-            {/* Email */}
+          <form className="space-y-5">
             <div>
-              <label className="block text-sm text-gray-300 mb-2">
-                Email
-              </label>
+              <label className="mb-2 block text-sm text-kemet-muted">Email</label>
               <input
                 type="email"
                 placeholder="you@example.com"
-                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
+                className="input-modern"
               />
             </div>
-
-            {/* Password */}
             <div>
-              <label className="block text-sm text-gray-300 mb-2">
+              <label className="mb-2 block text-sm text-kemet-muted">
                 Password
               </label>
               <input
                 type="password"
                 placeholder="••••••••"
-                className="w-full rounded-lg bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0C1135]"
+                className="input-modern"
               />
             </div>
-
-            {/* Remember & Forgot */}
-            <div className="flex items-center justify-between text-sm text-gray-400">
+            <div className="flex items-center justify-between text-sm text-kemet-muted">
               <label className="flex items-center gap-2">
-                <input type="checkbox" className="accent-[#0C1135]" />
+                <input type="checkbox" className="accent-kemet-gold" />
                 Remember me
               </label>
-              <a href="#" className="hover:text-white">
+              <a href="#" className="hover:text-kemet-gold">
                 Forgot password?
               </a>
             </div>
-
-            {/* Button */}
-            <button
-              type="submit"
-              className="w-full py-3 rounded-lg bg-[#0C1135] text-white font-semibold hover:bg-[#141a5a] transition"
-            >
+            <Button type="submit" variant="primary" className="w-full">
               Sign In
-            </button>
+            </Button>
           </form>
 
-          {/* Register */}
-          <p className="text-center text-gray-400 text-sm mt-8">
-            Don’t have an account?{" "}
-            <a href="Signup" className="text-white hover:underline">
+          <p className="mt-8 text-center text-sm text-kemet-muted">
+            Don&apos;t have an account?{" "}
+            <Link href="/Signup" className="text-kemet-gold hover:underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
-      </div>
-    </>
-  )
+      </GlassCard>
+    </main>
+  );
 }
-
-export default page
