@@ -54,3 +54,40 @@ body {
 .animate-path.done {
     stroke-dashoffset: 0; /* Normal visibility */
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.destination-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.destination-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.destination-map-marker {
+  top: var(--marker-top);
+  left: var(--marker-left);
+}
+
+@media (min-width: 768px) {
+  .destination-map-marker {
+    top: var(--marker-top-lg);
+    left: var(--marker-left-lg);
+  }
+}
